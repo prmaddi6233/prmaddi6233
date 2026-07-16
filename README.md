@@ -118,11 +118,11 @@ AWS CUR, FOCUS, Athena, QuickSight (CID/CUDOS), Grafana, cost allocation, taggin
 
 ## Featured Projects
 
-> Sanitized summaries of platform patterns I build. Source is not published here; repository links go live only once a public repo exists.
+> Sanitized patterns from my platform work. Links go live as public repos ship — starting with the **FinOps Analytics Pack** below.
 
 | Project | Problem it solves | Key technologies | Status |
 |---|---|---|---|
-| **FinOps Analytics Platform** | Billing exports, dashboards, and ownership signals are disconnected and hard to operationalize. | CUR 2.0, FOCUS, S3, Athena, QuickSight, Grafana, Terraform | Coming soon |
+| **[FinOps Analytics Pack](https://github.com/prmaddi6233/aws-finops-analytics-pack)** | Billing exports, dashboards, and ownership signals are disconnected and hard to operationalize. | CUR 2.0, FOCUS, S3, Athena, QuickSight, Grafana | **Live →** |
 | **Cost Optimization Automation** | Optimization recommendations need repeatable analysis and governance to move from reports to action. | Python, AWS Cost Optimization Hub, Athena, Terraform | Coming soon |
 | **Account Factory &amp; Landing Zone** | Multi-account adoption needs standardized vending, baseline controls, and repeatable delivery. | Control Tower, AFT, Organizations, Terraform, CodePipeline, CodeBuild | Coming soon |
 | **Cloud Governance Baseline** | New accounts need security and compliance controls applied consistently before workloads land. | Terraform, AWS Config, CloudTrail, GuardDuty, IAM Access Analyzer | Coming soon |
@@ -139,6 +139,9 @@ AWS CUR, FOCUS, Athena, QuickSight (CID/CUDOS), Grafana, cost allocation, taggin
 - Use AI assistance to accelerate operations while keeping human review in the loop.
 
 ## Connect
+
+Open to **Senior Cloud Platform Engineering**, **Platform Engineering**, **AWS Architecture**,
+and **Cloud FinOps** roles. The best way to reach me is LinkedIn.
 
 <div align="center">
 
