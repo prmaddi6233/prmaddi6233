@@ -125,7 +125,7 @@ AWS CUR, FOCUS, Athena, QuickSight (CID/CUDOS), Grafana, cost allocation, taggin
 | **[AFT Account Factory Blueprint](https://github.com/prmaddi6233/aws-aft-account-factory-blueprint)** | Multi-account adoption needs standardized vending with security and cost controls baked in from day one. | Control Tower, AFT, Terraform, Config, GuardDuty, Budgets | **Live →** |
 | **[FinOps Analytics Pack](https://github.com/prmaddi6233/aws-finops-analytics-pack)** | Billing exports, dashboards, and ownership signals are disconnected and hard to operationalize. | CUR 2.0, FOCUS, S3, Athena, QuickSight, Grafana | **Live →** |
 | **Cost Optimization Automation** | Optimization recommendations need repeatable analysis and governance to move from reports to action. | Python, AWS Cost Optimization Hub, Athena, Terraform | Coming soon |
-| **Cloud Governance Baseline** | New accounts need security and compliance controls applied consistently before workloads land. | Terraform, AWS Config, CloudTrail, GuardDuty, IAM Access Analyzer | Coming soon |
+| **[EKS Cost &amp; Governance Toolkit](https://github.com/prmaddi6233/eks-cost-governance-toolkit)** | Multi-tenant EKS clusters drift into waste and risk without enforced defaults and per-team budgets. | Kubernetes, EKS, Kyverno, Helm, ResourceQuota, OpenCost | **Live →** |
 | **Security Findings Pipeline** | Threat findings need centralized, encrypted, reliable routing into downstream systems. | GuardDuty, S3, SQS, KMS, Terraform, SIEM integration | Coming soon |
 | **AI-Assisted FinOps Operations** | Cost investigations are slow when context is scattered across Cost Explorer, CUR, and pricing. | Amazon Bedrock, MCP servers, Athena, Cost Explorer, Python, Terraform | Coming soon |
 
