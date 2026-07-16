@@ -78,6 +78,14 @@ Before completing future updates:
 - Run available Markdown validation locally.
 - Review the Git diff.
 
+## CI and Workflow Standards
+
+- The Markdown lint workflow runs on pull requests and pushes to `main`.
+- Pin GitHub Actions to full commit SHAs, with a trailing comment noting the
+  human-readable version (for example, `# v4.2.2`).
+- Keep workflow permissions least-privilege (`contents: read`); do not add write
+  permissions unless a specific step requires them.
+
 ## Future Codex Update Instructions
 
 Keep this repository separate from organization-owned or employer-related
