@@ -15,44 +15,57 @@ cloud governance, security automation, and FinOps. My work focuses on building
 enterprise cloud platforms that are repeatable, policy-aligned, observable, and
 cost-aware from the start.
 
-I bring practical experience across AWS multi-account environments, platform
-automation, EKS operations, reusable Terraform and OpenTofu patterns, CI/CD
-delivery, and engineering-led cost optimization. I am especially interested in
-platform capabilities that make secure cloud adoption easier for product teams
-without slowing delivery.
+Day to day, I help operate an enterprise AWS Organization of 100+ accounts with
+centralized governance, security, and cost management. My experience spans
+automated account lifecycle (provisioning through decommissioning), reusable
+Terraform and OpenTofu patterns, EKS operations, org-wide security baselines, and
+engineering-led FinOps analytics. I am especially interested in platform
+capabilities that make the secure, cost-aware path the easiest path for product
+teams without slowing delivery.
 
 ## Current Focus
 
-- AWS multi-account platform architecture using AWS Organizations, Control Tower, and IAM Identity Center
-- Reusable infrastructure delivery with Terraform, OpenTofu, Spacelift, GitHub Actions, and Jenkins
-- Kubernetes and Amazon EKS platform reliability, governance, and cost optimization
-- FinOps reporting and analytics using AWS CUR, Athena, QuickSight, and Grafana
-- Security and governance automation with CloudTrail, CloudWatch, AWS Config, IAM, and policy-based controls
-- AI-assisted cloud operations for investigation, automation, documentation, and operational workflows
+- Automating the full AWS account lifecycle with Account Factory for Terraform (AFT), Control Tower, and Step Functions across the organization
+- Engineering-led FinOps: CUR and FOCUS data layers, CID/CUDOS dashboards, and cost analytics on Athena, QuickSight, and Grafana
+- Hardening org-wide security and governance with CIS Benchmark 3.0 baselines, AWS Config, GuardDuty, and least-privilege IAM
+- Reusable Terraform and OpenTofu platform modules delivered through Spacelift, GitHub Actions, and Jenkins
+- Kubernetes and Amazon EKS platform reliability, workload governance, and cost optimization
+- AI-assisted cloud operations (Amazon Bedrock, MCP-based agents) for cost investigation, governance, and documentation
 
 ## Core Capabilities
 
-- Design and governance of AWS multi-account environments
-- Account provisioning, baseline configuration, and platform guardrails
-- Infrastructure as Code module design and reusable platform patterns
+- AWS multi-account architecture and governance with Organizations, Control Tower, and IAM Identity Center
+- Automated account lifecycle: vending, baseline customization, renaming, and decommissioning (AFT, Step Functions, CodePipeline, CodeBuild)
+- Infrastructure as Code module and platform design with Terraform and OpenTofu, delivered via Spacelift and GitHub Actions
 - Kubernetes platform engineering with EKS, Helm, Docker, and GitOps-oriented delivery
-- CI/CD automation for infrastructure and application platform workflows
-- Cloud governance, security control automation, and least-privilege access patterns
-- Cost allocation, tagging strategy, chargeback/showback enablement, and cost visibility
-- Cloud cost analytics using CUR, Athena, QuickSight, Grafana, and automation scripts
+- Cloud security and governance automation: CIS 3.0 baselines, AWS Config, GuardDuty, least-privilege IAM, and policy-as-code
+- Centralized logging, detective controls, and threat-finding pipelines into downstream SIEM
+- Engineering-led FinOps: cost allocation, tagging governance, and showback enablement
+- Cloud cost analytics using CUR, FOCUS, Athena, QuickSight, and Grafana
+- Cost optimization through commitment strategy (Reserved Instances, Savings Plans), Graviton adoption, and non-production sprawl detection
 - Platform scripting and automation with Python, Bash, and PowerShell
 
 ## Selected Engineering Outcomes
 
-- Operated and governed AWS multi-account environments with account structure,
-  access patterns, logging, and compliance controls aligned to enterprise needs.
-- Automated account provisioning and platform configuration to improve repeatability, reduce manual steps, and standardize baseline controls.
-- Built reusable Infrastructure as Code patterns that support consistent AWS resource delivery across teams and environments.
-- Improved cloud cost allocation and visibility by supporting tagging, reporting, and analytics workflows for engineering and finance stakeholders.
-- Automated governance and operational controls using AWS-native services and policy-driven approaches.
-- Optimized Kubernetes and AWS infrastructure costs through workload visibility, right-sizing analysis, and platform-level cost controls.
-- Built and supported cost analytics workflows using AWS CUR, Athena, QuickSight, and Grafana.
-- Improved cloud security posture through least-privilege access, centralized identity, configuration monitoring, and repeatable guardrails.
+- Operate and govern an enterprise AWS Organization of 100+ accounts with
+  standardized OUs, centralized logging, and policy-based guardrails.
+- Automate the end-to-end account lifecycle — vending, baseline customization,
+  renaming, and decommissioning — using AWS Account Factory for Terraform (AFT),
+  Step Functions, and CodePipeline/CodeBuild.
+- Standardize account provisioning with a ticket-keyed, allowlist-validated request
+  flow and enforced naming conventions, reducing manual steps and configuration drift.
+- Run organization-wide threat detection with centrally delegated Amazon GuardDuty
+  across multiple regions and 100+ member accounts, exporting findings through a
+  Terraform-managed pipeline into downstream SIEM.
+- Enforce a CIS Benchmark 3.0 security baseline org-wide via AWS Config, with
+  role-based cross-account trust and least-privilege access (no long-lived IAM users
+  for automation).
+- Build engineering-led FinOps analytics on AWS CUR and FOCUS data using Athena,
+  QuickSight (CID/CUDOS), and Grafana for queryable cost visibility and showback.
+- Drive cost optimization through commitment strategy (Reserved Instances and Savings
+  Plans), Graviton adoption, storage tiering, and non-production sprawl detection.
+- Design reusable Terraform and OpenTofu modules with Spacelift and GitHub Actions
+  delivery — branch guardrails, remote state, and review-based promotion.
 
 ## Technology Stack
 
@@ -61,7 +74,8 @@ without slowing delivery.
 ![AWS](https://img.shields.io/badge/AWS-232F3E?logo=amazonwebservices&logoColor=white)
 ![Amazon EKS](https://img.shields.io/badge/Amazon%20EKS-FF9900?logo=amazoneks&logoColor=white)
 
-AWS Organizations, AWS Control Tower, IAM Identity Center, IAM, VPC, CloudWatch, CloudTrail, AWS Config, AWS CUR, Athena, QuickSight
+AWS Organizations, Control Tower, Account Factory for Terraform (AFT), IAM Identity Center, IAM, VPC, Step Functions, CodePipeline, CodeBuild,
+GuardDuty, CloudWatch, CloudTrail, AWS Config, KMS
 
 ### Infrastructure as Code
 
@@ -91,7 +105,8 @@ CloudWatch, CloudTrail, AWS Config, IAM Access Analyzer, centralized logging, po
 
 ### FinOps and Analytics
 
-AWS CUR, Athena, QuickSight, Grafana, cost allocation, tagging governance, showback, optimization workflows
+AWS CUR, FOCUS, Athena, QuickSight (CID/CUDOS), Grafana, cost allocation, tagging governance, showback, commitment strategy (RI/Savings Plans),
+optimization workflows
 
 ### Programming and Scripting
 
