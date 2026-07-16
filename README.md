@@ -109,65 +109,65 @@ Automation, reporting, platform tooling, operational scripts
 
 ## Featured Projects
 
-### AWS FinOps Automation Platform
+### FinOps Analytics Platform
 
-Problem: Cloud cost data often lacks the automation and engineering context required for fast optimization decisions.
+Problem: Cost data is hard to operationalize when billing exports, dashboards, and engineering ownership signals are disconnected.
 
-Key technologies: AWS CUR, Athena, QuickSight, Grafana, Python, Terraform
+Key technologies: AWS CUR 2.0, FOCUS, S3, Athena, QuickSight, Grafana, Terraform
 
-Expected engineering value: Automated cost visibility, allocation reporting, and optimization workflows for engineering-led FinOps.
+Expected engineering value: Serverless cost analytics with queryable billing data, reusable views, and dashboards for engineering-led FinOps.
 
-Repository: Coming soon
+Repository: Coming soon - summary only; source code not published here.
 
-### AWS Multi-Account Landing Zone
+### Cost Optimization Automation
 
-Problem: AWS environments need repeatable account provisioning, centralized identity, logging, and governance before teams scale adoption.
+Problem: Optimization recommendations need repeatable analysis, verification, and governance loops to move from reports to action.
 
-Key technologies: AWS Organizations, Control Tower, IAM Identity Center, Terraform, OpenTofu, AWS Config, CloudTrail
+Key technologies: Python, AWS Cost Optimization Hub, AWS APIs, Athena, Terraform
 
-Expected engineering value: Standardized account baselines, guardrails, and platform patterns for secure multi-account growth.
+Expected engineering value: Automated cost opportunity analysis for storage, reservations, savings plans, tagging, and governance reviews.
 
-Repository: Coming soon
+Repository: Coming soon - summary only; source code not published here.
 
-### EKS Cost and Governance Toolkit
+### AWS Account Factory and Landing Zone Automation
 
-Problem: Kubernetes platforms need visibility and controls that connect workload ownership, cost, security, and operational standards.
+Problem: Multi-account AWS adoption requires standardized account vending, baseline controls, and repeatable delivery workflows.
 
-Key technologies: Amazon EKS, Kubernetes, Helm, Docker, Grafana, Terraform
+Key technologies: AWS Control Tower, AWS Account Factory for Terraform, AWS Organizations, Terraform, CodePipeline, CodeBuild
 
-Expected engineering value: Better workload cost awareness, governance automation, and reusable EKS operational controls.
+Expected engineering value: Repeatable account provisioning with centralized platform guardrails, logging, and customization pipelines.
 
-Repository: Coming soon
+Repository: Coming soon - summary only; source code not published here.
 
-### Terraform Platform Modules
+### Cloud Governance Baseline
 
-Problem: Teams need reliable infrastructure patterns that reduce repeated implementation effort and improve consistency.
+Problem: New AWS accounts need security and compliance controls applied consistently before workloads are deployed.
 
-Key technologies: Terraform, OpenTofu, AWS, GitHub Actions, Spacelift
+Key technologies: Terraform, AWS Config, CloudTrail, GuardDuty, IAM Access Analyzer, S3 Block Public Access, EBS encryption
 
-Expected engineering value: Reusable modules for common platform capabilities with reviewable, automated delivery.
+Expected engineering value: Standardized account baselines for encryption, access analysis, detective controls, and policy-aligned governance.
 
-Repository: Coming soon
+Repository: Coming soon - summary only; source code not published here.
 
-### AWS Cost Analytics with CUR and Athena
+### Centralized Security Findings Pipeline
 
-Problem: Raw billing data is difficult to use without queryable models, dashboards, and clear engineering ownership signals.
+Problem: Security findings need centralized, encrypted, and reliable routing into downstream operational systems.
 
-Key technologies: AWS CUR, S3, Athena, QuickSight, Grafana, Python
+Key technologies: Amazon GuardDuty, S3, SQS, KMS, Terraform, SIEM integration patterns
 
-Expected engineering value: Queryable cost data and dashboards that support allocation, anomaly investigation, and optimization planning.
+Expected engineering value: Centralized threat finding delivery with repeatable infrastructure, encrypted storage, and operational integration.
 
-Repository: Coming soon
+Repository: Coming soon - summary only; source code not published here.
 
-### AI-Assisted Cloud Operations
+### AI-Assisted FinOps Operations
 
-Problem: Cloud operations generate fragmented signals across logs, metrics, tickets, documentation, and automation systems.
+Problem: Cloud cost investigations are slow when engineers must manually connect Cost Explorer, CUR, pricing, and account context.
 
-Key technologies: Python, AWS APIs, operational runbooks, cloud observability data, AI-assisted workflows
+Key technologies: AWS Bedrock, MCP servers, Athena, Cost Explorer, DynamoDB, S3, Python, Terraform
 
-Expected engineering value: Faster investigation, better documentation, and repeatable operational assistance for platform teams.
+Expected engineering value: Grounded natural-language cost analysis with cached answers, cited data sources, and reusable operational knowledge.
 
-Repository: Coming soon
+Repository: Coming soon - summary only; source code not published here.
 
 ## Engineering Principles
 
