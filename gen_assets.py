@@ -110,20 +110,20 @@ def hero() -> str:
 
   {wires}
 
-  <!-- radar ping from the core -->
-  <circle cx="{cx}" cy="{cy}" r="60" fill="none" stroke="{CYAN}" stroke-width="1.5">
-    <animate attributeName="r" values="58;150" dur="3.4s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.55;0" dur="3.4s" repeatCount="indefinite"/>
+  <!-- radar ping from the core (starts wider than the card so it never crosses the text) -->
+  <circle cx="{cx}" cy="{cy}" r="70" fill="none" stroke="{CYAN}" stroke-width="1.5">
+    <animate attributeName="r" values="70;158" dur="3.4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0" dur="3.4s" repeatCount="indefinite"/>
   </circle>
 
   {boxes}
 
   <!-- control-plane core -->
   <g>
-    <rect x="{cx-116}" y="{cy-42}" width="232" height="84" rx="14" fill="{PANEL}" stroke="url(#core)" stroke-width="2"/>
-    <circle cx="{cx-92}" cy="{cy-20}" r="3.5" fill="{CYAN}"/>
-    <text x="{cx}" y="{cy-4}" text-anchor="middle" font-family="{MONO}" font-size="26" font-weight="700" fill="{HEAD}">PRADEEP MADDI</text>
-    <text x="{cx}" y="{cy+22}" text-anchor="middle" font-family="{MONO}" font-size="12.5" letter-spacing="2" fill="url(#core)">CLOUD PLATFORM ENGINEER · FINOPS</text>
+    <rect x="{cx-168}" y="{cy-46}" width="336" height="92" rx="16" fill="{PANEL}" stroke="url(#core)" stroke-width="2"/>
+    <circle cx="{cx-140}" cy="{cy-22}" r="3.5" fill="{CYAN}"/>
+    <text x="{cx}" y="{cy-8}" text-anchor="middle" font-family="{MONO}" font-size="27" font-weight="700" fill="{HEAD}">PRADEEP MADDI</text>
+    <text x="{cx}" y="{cy+22}" text-anchor="middle" font-family="{MONO}" font-size="12.5" letter-spacing="1.2" fill="url(#core)">CLOUD PLATFORM ENGINEER · FINOPS</text>
   </g>
 
   <text x="30" y="{H-22}" font-family="{MONO}" font-size="12" fill="{DIM}">// control plane · 150+ account AWS Organization</text>
@@ -216,7 +216,6 @@ def footer() -> str:
 
 assets = {
     "hero.svg": hero(),
-    "manifest.svg": manifest(),
     "h-about.svg": section("01", "WHOAMI", "about"),
     "h-impact.svg": section("02", "SCOPE & IMPACT", "what I run"),
     "h-projects.svg": section("03", "SELECTED WORK", "open source"),
