@@ -6,13 +6,13 @@
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-prmaddi6233.github.io-FF9900?style=for-the-badge&logo=googlechrome&logoColor=white)](https://prmaddi6233.github.io)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pradeep-maddi)
-[![Location](https://img.shields.io/badge/Calgary,%20Canada-1F6FEB?style=for-the-badge&logo=googlemaps&logoColor=white)](#)
+![Location](https://img.shields.io/badge/Calgary,%20Canada-1F6FEB?style=for-the-badge&logo=googlemaps&logoColor=white)
 
 </div>
 
 ---
 
-### 👨‍💻 About Me
+## 👨‍💻 About Me
 
 ```yaml
 role: Cloud Platform Engineer
@@ -42,7 +42,7 @@ thesis: >
 
 ---
 
-### 🏅 Certifications
+## 🏅 Certifications
 
 <div align="center">
 
@@ -54,7 +54,7 @@ thesis: >
 
 ---
 
-### 🛠️ Skills & Technologies
+## 🛠️ Skills & Technologies
 
 <details open>
 <summary><b>Cloud & Platform</b></summary>
@@ -175,7 +175,7 @@ thesis: >
 
 ---
 
-### 🚀 Featured Projects
+## 🚀 Featured Projects
 
 <table>
 <tr>
@@ -224,7 +224,7 @@ Kyverno guardrails + budgeted namespaces for multi-tenant EKS.
 
 ---
 
-### ✍️ Writing & Thinking
+## ✍️ Writing & Thinking
 
 | | Article | Topic |
 |---|---------|-------|
@@ -236,7 +236,7 @@ Kyverno guardrails + budgeted namespaces for multi-tenant EKS.
 
 <div align="center">
 
-### 🤝 Let's Connect
+## 🤝 Let's Connect
 
 *Open to **Senior/Principal Cloud Platform Engineering**, **AWS Architecture**, and **FinOps** roles.*
 
@@ -244,6 +244,6 @@ Kyverno guardrails + budgeted namespaces for multi-tenant EKS.
 [![Portfolio](https://img.shields.io/badge/Portfolio-FF9900?style=for-the-badge&logo=googlechrome&logoColor=white)](https://prmaddi6233.github.io)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:maddipradeep201@gmail.com)
 
-![](https://komarev.com/ghpvc/?username=prmaddi6233&style=flat-square&color=FF9900&label=Profile+Views)
+![Profile Views](https://komarev.com/ghpvc/?username=prmaddi6233&style=flat-square&color=FF9900&label=Profile+Views)
 
 </div>
