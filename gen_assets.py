@@ -197,6 +197,40 @@ def manifest() -> str:
 </svg>"""
 
 
+def metrics() -> str:
+    """Animated stat strip — big crisp numbers under the SCOPE header."""
+    W, H = 900, 120
+    cells = [
+        ("150+",   "AWS accounts",     CYAN),
+        ("$500K+", "identified / yr",  VIOLET),
+        ("~115",   "accounts secured", TEAL),
+        ("100%",   "IaC-managed",      CYAN),
+    ]
+    cw = W / len(cells)
+    parts = []
+    for i, (num, label, accent) in enumerate(cells):
+        cx = cw * i + cw / 2
+        if i:
+            parts.append(f'<line x1="{cw*i:.0f}" y1="26" x2="{cw*i:.0f}" y2="{H-26}" stroke="{EDGE}"/>')
+        parts.append(f"""
+    <g>
+      <circle cx="{cx:.0f}" cy="34" r="3.5" fill="{accent}" filter="url(#glow)">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="2.6s" begin="{i*0.3:.2f}s" repeatCount="indefinite"/>
+      </circle>
+      <text x="{cx:.0f}" y="72" text-anchor="middle" font-family="{MONO}" font-size="38" font-weight="700" fill="url(#core)">{num}</text>
+      <text x="{cx:.0f}" y="98" text-anchor="middle" font-family="{MONO}" font-size="12.5" letter-spacing="1" fill="{DIM}">{label}</text>
+      <rect x="{cx-26:.0f}" y="108" width="52" height="2.5" rx="1" fill="{accent}" opacity="0.85">
+        <animate attributeName="width" values="0;52" keyTimes="0;1" dur="0.9s" begin="{i*0.2+0.2:.2f}s" repeatCount="1" fill="freeze"/>
+      </rect>
+    </g>""")
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Scope: 150+ AWS accounts · $500K+/yr identified savings · ~115 accounts secured · 100% IaC-managed">
+  <defs>{common_defs()}</defs>
+  <rect width="{W}" height="{H}" rx="12" fill="{PANEL}"/>
+  <rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="11.5" fill="none" stroke="{EDGE}"/>
+  {''.join(parts)}
+</svg>"""
+
+
 def footer() -> str:
     W, H = 900, 84
     cx = W // 2
@@ -216,6 +250,7 @@ def footer() -> str:
 
 assets = {
     "hero.svg": hero(),
+    "metrics.svg": metrics(),
     "h-about.svg": section("01", "WHOAMI", "about"),
     "h-impact.svg": section("02", "SCOPE & IMPACT", "what I run"),
     "h-projects.svg": section("03", "SELECTED WORK", "open source"),

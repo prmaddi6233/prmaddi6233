@@ -37,6 +37,12 @@ Principles I build by:
 
 <img src="assets/h-impact.svg" width="100%" alt="02 · SCOPE & IMPACT" />
 
+<div align="center">
+
+<img src="assets/metrics.svg" width="100%" alt="150+ AWS accounts · $500K+/yr identified savings · ~115 accounts secured · 100% IaC-managed" />
+
+</div>
+
 - **150+ AWS accounts** governed through Control Tower + AFT — policy-gated vending with cost attribution baked in from account zero.
 - **Kubernetes at scale** — multi-tenant EKS with Karpenter, Kyverno guardrails, and per-namespace budgets so no tenant outspends its envelope.
 - **Evidence-based FinOps** — surfaced **$500K+/yr** in defensible savings (RI/SP coverage, Graviton, gp2→gp3, storage lifecycle), each with a proof step before it ships.
@@ -92,16 +98,65 @@ Kyverno guardrails + budgeted namespaces for multi-tenant EKS.
 
 <img src="assets/h-stack.svg" width="100%" alt="04 · TECH STACK" />
 
-| Domain | Tools |
-|---|---|
-| **Cloud** | AWS (Organizations · Control Tower · IAM · EKS · Lambda) · Azure · GCP |
-| **Containers** | Kubernetes · EKS · Karpenter · Kyverno · Helm · ArgoCD · OpenCost |
-| **IaC** | Terraform · OpenTofu · Terragrunt · CloudFormation · Spacelift · Ansible |
-| **CI/CD** | GitHub Actions · CodePipeline · Step Functions · EventBridge |
-| **FinOps** | FOCUS 1.2 · CUR 2.0 · Athena · QuickSight · Cost Explorer · Savings Plans · Graviton |
-| **Security** | IAM Identity Center · SCPs · IAM · OIDC · GuardDuty · Security Hub · AWS Config · KMS · WAF · SARIF |
-| **Observability** | Grafana · Prometheus · CloudWatch · Datadog |
-| **Languages** | Python · Bash · Go · SQL · HCL |
+**Cloud**  
+![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white&labelColor=0a0e1a)
+![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white&labelColor=0a0e1a)
+![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white&labelColor=0a0e1a)
+![Control Tower](https://img.shields.io/badge/Control%20Tower-22d3ee?style=flat-square&labelColor=0a0e1a)
+![Organizations](https://img.shields.io/badge/Organizations-a78bfa?style=flat-square&labelColor=0a0e1a)
+
+**Containers & Orchestration**  
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white&labelColor=0a0e1a)
+![EKS](https://img.shields.io/badge/EKS-FF9900?style=flat-square&logo=amazoneks&logoColor=white&labelColor=0a0e1a)
+![Karpenter](https://img.shields.io/badge/Karpenter-22d3ee?style=flat-square&labelColor=0a0e1a)
+![Kyverno](https://img.shields.io/badge/Kyverno-a78bfa?style=flat-square&labelColor=0a0e1a)
+![Helm](https://img.shields.io/badge/Helm-0F1689?style=flat-square&logo=helm&logoColor=white&labelColor=0a0e1a)
+![ArgoCD](https://img.shields.io/badge/ArgoCD-EF7B4D?style=flat-square&logo=argo&logoColor=white&labelColor=0a0e1a)
+![OpenCost](https://img.shields.io/badge/OpenCost-2dd4bf?style=flat-square&labelColor=0a0e1a)
+
+**Infrastructure as Code**  
+![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white&labelColor=0a0e1a)
+![OpenTofu](https://img.shields.io/badge/OpenTofu-FFDA18?style=flat-square&logo=opentofu&logoColor=black&labelColor=0a0e1a)
+![Terragrunt](https://img.shields.io/badge/Terragrunt-844FBA?style=flat-square&labelColor=0a0e1a)
+![Spacelift](https://img.shields.io/badge/Spacelift-2dd4bf?style=flat-square&labelColor=0a0e1a)
+![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=flat-square&logo=ansible&logoColor=white&labelColor=0a0e1a)
+
+**CI/CD & Automation**  
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white&labelColor=0a0e1a)
+![CodePipeline](https://img.shields.io/badge/CodePipeline-FF9900?style=flat-square&labelColor=0a0e1a)
+![Step Functions](https://img.shields.io/badge/Step%20Functions-a78bfa?style=flat-square&labelColor=0a0e1a)
+![EventBridge](https://img.shields.io/badge/EventBridge-22d3ee?style=flat-square&labelColor=0a0e1a)
+
+**FinOps & Cost**  
+![FOCUS 1.2](https://img.shields.io/badge/FOCUS%201.2-a78bfa?style=flat-square&labelColor=0a0e1a)
+![CUR 2.0](https://img.shields.io/badge/CUR%202.0-FF9900?style=flat-square&labelColor=0a0e1a)
+![Athena](https://img.shields.io/badge/Athena-22d3ee?style=flat-square&labelColor=0a0e1a)
+![QuickSight](https://img.shields.io/badge/QuickSight-2dd4bf?style=flat-square&labelColor=0a0e1a)
+![Savings Plans](https://img.shields.io/badge/Savings%20Plans-a78bfa?style=flat-square&labelColor=0a0e1a)
+![Graviton](https://img.shields.io/badge/Graviton-FF9900?style=flat-square&labelColor=0a0e1a)
+
+**Security & Access**  
+![IAM Identity Center](https://img.shields.io/badge/IAM%20Identity%20Center-22d3ee?style=flat-square&labelColor=0a0e1a)
+![SCPs](https://img.shields.io/badge/SCPs-a78bfa?style=flat-square&labelColor=0a0e1a)
+![OIDC](https://img.shields.io/badge/OIDC-2dd4bf?style=flat-square&labelColor=0a0e1a)
+![GuardDuty](https://img.shields.io/badge/GuardDuty-DD344C?style=flat-square&labelColor=0a0e1a)
+![Security Hub](https://img.shields.io/badge/Security%20Hub-2dd4bf?style=flat-square&labelColor=0a0e1a)
+![AWS Config](https://img.shields.io/badge/AWS%20Config-22d3ee?style=flat-square&labelColor=0a0e1a)
+![KMS](https://img.shields.io/badge/KMS-a78bfa?style=flat-square&labelColor=0a0e1a)
+![WAF](https://img.shields.io/badge/WAF-FF9900?style=flat-square&labelColor=0a0e1a)
+
+**Observability**  
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white&labelColor=0a0e1a)
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white&labelColor=0a0e1a)
+![CloudWatch](https://img.shields.io/badge/CloudWatch-FF4F8B?style=flat-square&logo=amazoncloudwatch&logoColor=white&labelColor=0a0e1a)
+![Datadog](https://img.shields.io/badge/Datadog-632CA6?style=flat-square&logo=datadog&logoColor=white&labelColor=0a0e1a)
+
+**Languages**  
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white&labelColor=0a0e1a)
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white&labelColor=0a0e1a)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white&labelColor=0a0e1a)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white&labelColor=0a0e1a)
+![HCL](https://img.shields.io/badge/HCL-844FBA?style=flat-square&labelColor=0a0e1a)
 
 <div align="center">
 

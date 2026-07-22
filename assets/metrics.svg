@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="120" viewBox="0 0 900 120" role="img" aria-label="Scope: 150+ AWS accounts · $500K+/yr identified savings · ~115 accounts secured · 100% IaC-managed">
+  <defs>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="0.5" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#2dd4bf"/>
+    </linearGradient>
+    <linearGradient id="wire" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#a78bfa" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#0a0e1a" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2.4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0 L0 0 0 30" fill="none" stroke="#111a30" stroke-width="1"/>
+    </pattern></defs>
+  <rect width="900" height="120" rx="12" fill="#0e1426"/>
+  <rect x="0.5" y="0.5" width="899" height="119" rx="11.5" fill="none" stroke="#20304f"/>
+  
+    <g>
+      <circle cx="112" cy="34" r="3.5" fill="#22d3ee" filter="url(#glow)">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="2.6s" begin="0.00s" repeatCount="indefinite"/>
+      </circle>
+      <text x="112" y="72" text-anchor="middle" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="38" font-weight="700" fill="url(#core)">150+</text>
+      <text x="112" y="98" text-anchor="middle" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="12.5" letter-spacing="1" fill="#5f6f92">AWS accounts</text>
+      <rect x="86" y="108" width="52" height="2.5" rx="1" fill="#22d3ee" opacity="0.85">
+        <animate attributeName="width" values="0;52" keyTimes="0;1" dur="0.9s" begin="0.20s" repeatCount="1" fill="freeze"/>
+      </rect>
+    </g><line x1="225" y1="26" x2="225" y2="94" stroke="#20304f"/>
+    <g>
+      <circle cx="338" cy="34" r="3.5" fill="#a78bfa" filter="url(#glow)">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="2.6s" begin="0.30s" repeatCount="indefinite"/>
+      </circle>
+      <text x="338" y="72" text-anchor="middle" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="38" font-weight="700" fill="url(#core)">$500K+</text>
+      <text x="338" y="98" text-anchor="middle" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="12.5" letter-spacing="1" fill="#5f6f92">identified / yr</text>
+      <rect x="312" y="108" width="52" height="2.5" rx="1" fill="#a78bfa" opacity="0.85">
+        <animate attributeName="width" values="0;52" keyTimes="0;1" dur="0.9s" begin="0.40s" repeatCount="1" fill="freeze"/>
+      </rect>
+    </g><line x1="450" y1="26" x2="450" y2="94" stroke="#20304f"/>
+    <g>
+      <circle cx="562" cy="34" r="3.5" fill="#2dd4bf" filter="url(#glow)">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="2.6s" begin="0.60s" repeatCount="indefinite"/>
+      </circle>
+      <text x="562" y="72" text-anchor="middle" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="38" font-weight="700" fill="url(#core)">~115</text>
+      <text x="562" y="98" text-anchor="middle" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="12.5" letter-spacing="1" fill="#5f6f92">accounts secured</text>
+      <rect x="536" y="108" width="52" height="2.5" rx="1" fill="#2dd4bf" opacity="0.85">
+        <animate attributeName="width" values="0;52" keyTimes="0;1" dur="0.9s" begin="0.60s" repeatCount="1" fill="freeze"/>
+      </rect>
+    </g><line x1="675" y1="26" x2="675" y2="94" stroke="#20304f"/>
+    <g>
+      <circle cx="788" cy="34" r="3.5" fill="#22d3ee" filter="url(#glow)">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="2.6s" begin="0.90s" repeatCount="indefinite"/>
+      </circle>
+      <text x="788" y="72" text-anchor="middle" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="38" font-weight="700" fill="url(#core)">100%</text>
+      <text x="788" y="98" text-anchor="middle" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="12.5" letter-spacing="1" fill="#5f6f92">IaC-managed</text>
+      <rect x="762" y="108" width="52" height="2.5" rx="1" fill="#22d3ee" opacity="0.85">
+        <animate attributeName="width" values="0;52" keyTimes="0;1" dur="0.9s" begin="0.80s" repeatCount="1" fill="freeze"/>
+      </rect>
+    </g>
+</svg>
