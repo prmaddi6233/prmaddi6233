@@ -120,3 +120,28 @@ Whether it's platform engineering, FinOps, or an interesting problem in cloud co
 <img src="assets/footer.svg" width="100%" alt=""/>
 
 </div>
+
+---
+
+<div align="center">
+
+### 📊 GitHub Analytics
+
+<img src="https://github-readme-stats.vercel.app/api?username=prmaddi6233&show_icons=true&theme=github_dark&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub Stats" width="49%" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=prmaddi6233&theme=github-dark-blue&hide_border=true" alt="GitHub Streak" width="49%" />
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=prmaddi6233&theme=github-compact&hide_border=true&area=true&area_color=FF9900" alt="Activity Graph" width="98%" />
+
+### 🐍 Contribution Snake
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/prmaddi6233/prmaddi6233/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/prmaddi6233/prmaddi6233/output/github-snake.svg" />
+  <img alt="github-snake" src="https://raw.githubusercontent.com/prmaddi6233/prmaddi6233/output/github-snake-dark.svg" />
+</picture>
+
+<br />
+
+![Profile Views](https://komarev.com/ghpvc/?username=prmaddi6233&style=for-the-badge&color=0d1117&label=PROFILE+VIEWS)
+
+</div>
