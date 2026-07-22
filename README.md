@@ -23,7 +23,7 @@ survives an audit, and automation that takes humans out of the critical path.
 ![Kubernetes at Scale](https://img.shields.io/badge/Kubernetes%20at%20Scale-2dd4bf?style=flat-square&logo=kubernetes&logoColor=white&labelColor=0a0e1a)
 ![Governance](https://img.shields.io/badge/Governance-22d3ee?style=flat-square&labelColor=0a0e1a)
 
-🛰️ **Currently building** — [cloud-finops-agent](https://github.com/prmaddi6233/cloud-finops-agent): tiered, fail-closed cost validation with production canaries and SARIF findings.
+> 🚀 **Currently shipping →** [cloud-finops-agent](https://github.com/prmaddi6233/cloud-finops-agent): tiered, fail-closed cost validation — deterministic rules, production metrics, and Lambda canary with automated rollback. [Read why →](https://github.com/prmaddi6233/cloud-finops-agent/blob/main/docs/blog-why-sandbox-benchmarks-fail.md)
 
 > Cost and security recommendations rot in backlogs because nobody proves they're safe to apply. **I build the evidence layer that does.**
 
@@ -42,6 +42,10 @@ Principles I build by:
 
 <img src="assets/metrics.svg" width="100%" alt="150+ AWS accounts · $500K+/yr identified savings · 150 accounts guarded · 100% IaC-managed" />
 
+</div>
+
+<div align="center">
+<sub>150+ AWS accounts · $500K+/yr identified savings · 100% IaC-managed</sub>
 </div>
 
 - **150+ AWS accounts** governed through Control Tower + AFT — policy-gated vending with cost attribution baked in from account zero.
@@ -194,6 +198,12 @@ Kyverno guardrails + budgeted namespaces for multi-tenant EKS.
 [![Email](https://img.shields.io/badge/Email-maddipradeep201-2dd4bf?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0a0e1a)](mailto:maddipradeep201@gmail.com)
 
 <br />
+
+<div align="center">
+
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=prmaddi6233&theme=transparent&hide_border=true&ring=FF9900&fire=FF9900&currStreakLabel=FF9900)
+
+</div>
 
 <img src="assets/footer.svg" width="100%" alt="Open to Principal / Senior Cloud Platform Engineering · AWS · FinOps" />
 
