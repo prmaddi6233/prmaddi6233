@@ -88,12 +88,12 @@ def hero() -> str:
     cx, cy = 450, 210
     rx, ry = 300, 150
     nodes = [
-        (90,  "150+ AWS ACCOUNTS", "control tower + AFT", CYAN),
-        (150, "CONTROL TOWER",     "governance baseline", VIOLET),
-        (210, "TERRAFORM · IaC",   "OpenTofu · Spacelift", TEAL),
-        (330, "GUARDDUTY · SCPs",  "org-wide security",  CYAN),
-        (270, "FINOPS · FOCUS 1.2","evidence-based",     VIOLET),
-        (30,  "EKS · KARPENTER",   "multi-tenant K8s",   TEAL),
+        (90,  "PLATFORM @ SCALE", "150+ AWS accounts",     CYAN),
+        (150, "GOVERNANCE",       "Control Tower · AFT",   VIOLET),
+        (210, "IaC / AUTOMATION", "Terraform · Spacelift", TEAL),
+        (330, "SECURITY POSTURE", "org-wide GuardDuty",    CYAN),
+        (270, "COST GOVERNANCE",  "FinOps · FOCUS 1.2",    VIOLET),
+        (30,  "K8s PLATFORM",     "multi-tenant EKS",      TEAL),
     ]
     pts = [(a, cx + rx * math.cos(math.radians(a)), cy - ry * math.sin(math.radians(a)),
             t, s, c) for a, t, s, c in nodes]
@@ -155,6 +155,48 @@ def section(num: str, title: str, sub: str) -> str:
 </svg>"""
 
 
+def manifest() -> str:
+    """The operator.manifest card — replaces the plain YAML code block."""
+    W, H = 900, 292
+    kx, vx = 34, 150
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Operator manifest — role: Cloud Platform Engineer and FinOps; org: 150+ account AWS Organization; building cloud-finops-agent">
+  <defs>{common_defs()}</defs>
+  <rect width="{W}" height="{H}" rx="12" fill="{PANEL}"/>
+  <rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="11.5" fill="none" stroke="{EDGE}"/>
+  <!-- title bar -->
+  <circle cx="26" cy="26" r="4.5" fill="{CYAN}"/>
+  <circle cx="42" cy="26" r="4.5" fill="{VIOLET}"/>
+  <circle cx="58" cy="26" r="4.5" fill="{TEAL}"/>
+  <text x="80" y="30" font-family="{MONO}" font-size="12.5" letter-spacing="1" fill="{DIM}">operator.manifest &#183; control-plane spec</text>
+  <line x1="0" y1="48" x2="{W}" y2="48" stroke="{EDGE}"/>
+
+  <g font-family="{MONO}" font-size="15">
+    <text x="{kx}" y="90"  fill="{CYAN}" font-weight="700">role</text>
+    <text x="{vx}" y="90"  fill="{HEAD}">Cloud Platform Engineer &#183; FinOps</text>
+
+    <text x="{kx}" y="120" fill="{CYAN}" font-weight="700">org</text>
+    <text x="{vx}" y="120" fill="{HEAD}">150+ account AWS Organization</text>
+
+    <text x="{kx}" y="150" fill="{CYAN}" font-weight="700">domains</text>
+    <text x="{vx}" y="150" fill="{VIOLET}">[ <tspan fill="{TEXT}">platform engineering, FinOps, Kubernetes at scale, governance</tspan> ]</text>
+
+    <text x="{kx}" y="180" fill="{CYAN}" font-weight="700">building</text>
+    <text x="{vx}" y="180" fill="{TEAL}">cloud-finops-agent</text>
+    <text x="{vx+186}" y="180" fill="{DIM}"># tiered, fail-closed cost validation</text>
+
+    <text x="{kx}" y="216" fill="{CYAN}" font-weight="700">thesis</text>
+    <text x="{vx}" y="216" fill="{VIOLET}">&#8250;</text>
+    <text x="{vx+18}" y="216" fill="{TEXT}">Cost and security recommendations rot in backlogs because</text>
+    <text x="{vx+18}" y="242" fill="{TEXT}">nobody proves they are safe to apply. I build the evidence</text>
+    <text x="{vx+18}" y="268" fill="{TEXT}">layer that does.</text>
+  </g>
+
+  <circle r="2.6" fill="{PKT}" filter="url(#glow)">
+    <animateMotion dur="3.2s" repeatCount="indefinite" path="M{W-30} 26 L30 26"/>
+  </circle>
+</svg>"""
+
+
 def footer() -> str:
     W, H = 900, 84
     cx = W // 2
@@ -174,6 +216,7 @@ def footer() -> str:
 
 assets = {
     "hero.svg": hero(),
+    "manifest.svg": manifest(),
     "h-about.svg": section("01", "WHOAMI", "about"),
     "h-impact.svg": section("02", "SCOPE & IMPACT", "what I run"),
     "h-projects.svg": section("03", "SELECTED WORK", "open source"),

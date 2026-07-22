@@ -87,48 +87,48 @@
     <circle cx="382" cy="60" r="4" fill="#22d3ee" filter="url(#glow)">
       <animate attributeName="opacity" values="0.4;1;0.4" dur="2.6s" begin="0.0s" repeatCount="indefinite"/>
     </circle>
-    <text x="396" y="57" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="700" fill="#f2f6ff">150+ AWS ACCOUNTS</text>
-    <text x="396" y="73" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#5f6f92">control tower + AFT</text>
+    <text x="396" y="57" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="700" fill="#f2f6ff">PLATFORM @ SCALE</text>
+    <text x="396" y="73" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#5f6f92">150+ AWS accounts</text>
   </g>
   <g>
     <rect x="106" y="110" width="168" height="50" rx="10" fill="#101a30" stroke="#2b4a78"/>
     <circle cx="122" cy="135" r="4" fill="#a78bfa" filter="url(#glow)">
       <animate attributeName="opacity" values="0.4;1;0.4" dur="2.6s" begin="0.4s" repeatCount="indefinite"/>
     </circle>
-    <text x="136" y="132" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="700" fill="#f2f6ff">CONTROL TOWER</text>
-    <text x="136" y="148" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#5f6f92">governance baseline</text>
+    <text x="136" y="132" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="700" fill="#f2f6ff">GOVERNANCE</text>
+    <text x="136" y="148" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#5f6f92">Control Tower · AFT</text>
   </g>
   <g>
     <rect x="106" y="260" width="168" height="50" rx="10" fill="#101a30" stroke="#2b4a78"/>
     <circle cx="122" cy="285" r="4" fill="#2dd4bf" filter="url(#glow)">
       <animate attributeName="opacity" values="0.4;1;0.4" dur="2.6s" begin="0.8s" repeatCount="indefinite"/>
     </circle>
-    <text x="136" y="282" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="700" fill="#f2f6ff">TERRAFORM · IaC</text>
-    <text x="136" y="298" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#5f6f92">OpenTofu · Spacelift</text>
+    <text x="136" y="282" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="700" fill="#f2f6ff">IaC / AUTOMATION</text>
+    <text x="136" y="298" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#5f6f92">Terraform · Spacelift</text>
   </g>
   <g>
     <rect x="626" y="260" width="168" height="50" rx="10" fill="#101a30" stroke="#2b4a78"/>
     <circle cx="642" cy="285" r="4" fill="#22d3ee" filter="url(#glow)">
       <animate attributeName="opacity" values="0.4;1;0.4" dur="2.6s" begin="1.2000000000000002s" repeatCount="indefinite"/>
     </circle>
-    <text x="656" y="282" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="700" fill="#f2f6ff">GUARDDUTY · SCPs</text>
-    <text x="656" y="298" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#5f6f92">org-wide security</text>
+    <text x="656" y="282" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="700" fill="#f2f6ff">SECURITY POSTURE</text>
+    <text x="656" y="298" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#5f6f92">org-wide GuardDuty</text>
   </g>
   <g>
     <rect x="366" y="335" width="168" height="50" rx="10" fill="#101a30" stroke="#2b4a78"/>
     <circle cx="382" cy="360" r="4" fill="#a78bfa" filter="url(#glow)">
       <animate attributeName="opacity" values="0.4;1;0.4" dur="2.6s" begin="1.6s" repeatCount="indefinite"/>
     </circle>
-    <text x="396" y="357" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="700" fill="#f2f6ff">FINOPS · FOCUS 1.2</text>
-    <text x="396" y="373" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#5f6f92">evidence-based</text>
+    <text x="396" y="357" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="700" fill="#f2f6ff">COST GOVERNANCE</text>
+    <text x="396" y="373" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#5f6f92">FinOps · FOCUS 1.2</text>
   </g>
   <g>
     <rect x="626" y="110" width="168" height="50" rx="10" fill="#101a30" stroke="#2b4a78"/>
     <circle cx="642" cy="135" r="4" fill="#2dd4bf" filter="url(#glow)">
       <animate attributeName="opacity" values="0.4;1;0.4" dur="2.6s" begin="2.0s" repeatCount="indefinite"/>
     </circle>
-    <text x="656" y="132" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="700" fill="#f2f6ff">EKS · KARPENTER</text>
-    <text x="656" y="148" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#5f6f92">multi-tenant K8s</text>
+    <text x="656" y="132" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="700" fill="#f2f6ff">K8s PLATFORM</text>
+    <text x="656" y="148" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#5f6f92">multi-tenant EKS</text>
   </g>
 
   <!-- control-plane core -->

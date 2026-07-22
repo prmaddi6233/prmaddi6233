@@ -17,15 +17,11 @@ I run cloud platforms at organization scale and make cost, security, and reliabi
 and governance meet: guardrails that fail closed, evidence that survives an audit, and
 automation that takes humans out of the critical path.
 
-```yaml
-role:     Cloud Platform Engineer · FinOps
-org:      150+ account AWS Organization
-domains:  [ platform engineering, FinOps, Kubernetes at scale, governance ]
-building: cloud-finops-agent   # tiered, fail-closed cost validation (open source)
-thesis: >
-  Cost and security recommendations rot in backlogs because nobody
-  proves they are safe to apply. I build the evidence layer that does.
-```
+<div align="center">
+
+<img src="assets/manifest.svg" width="100%" alt="Operator manifest — role: Cloud Platform Engineer & FinOps · org: 150+ account AWS Organization · building cloud-finops-agent · thesis: I build the evidence layer that proves cost & security changes are safe to apply" />
+
+</div>
 
 Principles I build by:
 
