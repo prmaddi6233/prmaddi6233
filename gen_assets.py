@@ -203,7 +203,7 @@ def metrics() -> str:
     cells = [
         ("150+",   "AWS accounts",     CYAN),
         ("$500K+", "identified / yr",  VIOLET),
-        ("~115",   "accounts secured", TEAL),
+        ("150",    "accounts guarded", TEAL),
         ("100%",   "IaC-managed",      CYAN),
     ]
     cw = W / len(cells)
@@ -223,7 +223,7 @@ def metrics() -> str:
         <animate attributeName="width" values="0;52" keyTimes="0;1" dur="0.9s" begin="{i*0.2+0.2:.2f}s" repeatCount="1" fill="freeze"/>
       </rect>
     </g>""")
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Scope: 150+ AWS accounts · $500K+/yr identified savings · ~115 accounts secured · 100% IaC-managed">
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Scope: 150+ AWS accounts · $500K+/yr identified savings · 150 accounts guarded · 100% IaC-managed">
   <defs>{common_defs()}</defs>
   <rect width="{W}" height="{H}" rx="12" fill="{PANEL}"/>
   <rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="11.5" fill="none" stroke="{EDGE}"/>

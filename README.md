@@ -12,17 +12,18 @@
 
 <img src="assets/h-about.svg" width="100%" alt="01 · WHOAMI" />
 
-I run cloud platforms at organization scale and make cost, security, and reliability
-**enforceable** — not aspirational. My work sits where platform engineering, FinOps,
-and governance meet: guardrails that fail closed, evidence that survives an audit, and
-automation that takes humans out of the critical path.
+**Cloud Platform Engineer · FinOps** &nbsp;·&nbsp; Calgary, Canada 🇨🇦 &nbsp;·&nbsp; 150+ account AWS Organization
 
-| | |
-|:--|:--|
-| **Role** | Cloud Platform Engineer · FinOps |
-| **Org** | 150+ account AWS Organization |
-| **Focus** | Platform engineering · FinOps · Kubernetes at scale · Governance |
-| **Building** | [cloud-finops-agent](https://github.com/prmaddi6233/cloud-finops-agent) — tiered, fail-closed cost validation |
+I make cost, security, and reliability **enforceable** — not aspirational. My work sits where
+platform engineering, FinOps, and governance meet: guardrails that fail closed, evidence that
+survives an audit, and automation that takes humans out of the critical path.
+
+![Platform Engineering](https://img.shields.io/badge/Platform%20Engineering-22d3ee?style=flat-square&labelColor=0a0e1a)
+![FinOps](https://img.shields.io/badge/FinOps-a78bfa?style=flat-square&labelColor=0a0e1a)
+![Kubernetes at Scale](https://img.shields.io/badge/Kubernetes%20at%20Scale-2dd4bf?style=flat-square&logo=kubernetes&logoColor=white&labelColor=0a0e1a)
+![Governance](https://img.shields.io/badge/Governance-22d3ee?style=flat-square&labelColor=0a0e1a)
+
+🛰️ **Currently building** — [cloud-finops-agent](https://github.com/prmaddi6233/cloud-finops-agent): tiered, fail-closed cost validation with production canaries and SARIF findings.
 
 > Cost and security recommendations rot in backlogs because nobody proves they're safe to apply. **I build the evidence layer that does.**
 
@@ -39,14 +40,14 @@ Principles I build by:
 
 <div align="center">
 
-<img src="assets/metrics.svg" width="100%" alt="150+ AWS accounts · $500K+/yr identified savings · ~115 accounts secured · 100% IaC-managed" />
+<img src="assets/metrics.svg" width="100%" alt="150+ AWS accounts · $500K+/yr identified savings · 150 accounts guarded · 100% IaC-managed" />
 
 </div>
 
 - **150+ AWS accounts** governed through Control Tower + AFT — policy-gated vending with cost attribution baked in from account zero.
 - **Kubernetes at scale** — multi-tenant EKS with Karpenter, Kyverno guardrails, and per-namespace budgets so no tenant outspends its envelope.
 - **Evidence-based FinOps** — surfaced **$500K+/yr** in defensible savings (RI/SP coverage, Graviton, gp2→gp3, storage lifecycle), each with a proof step before it ships.
-- **Org-wide security posture** — own the preventive→detective→audit stack: centralized access via IAM Identity Center (SSO + permission sets), SCPs and IAM/OIDC guardrails, GuardDuty + Security Hub + AWS Config across ~115 accounts, KMS and WAF baselines — all Terraform-managed and drift-free.
+- **Org-wide security posture** — own the preventive→detective→audit stack: centralized access via IAM Identity Center (SSO + permission sets), SCPs and IAM/OIDC guardrails, GuardDuty + Security Hub + AWS Config across all 150 accounts, KMS and WAF baselines — all Terraform-managed and drift-free.
 - **Fail-closed automation** — SARIF findings, OIDC-scoped access, and production canaries instead of sandbox benchmarks that lie.
 
 <img src="assets/h-projects.svg" width="100%" alt="03 · SELECTED WORK" />
