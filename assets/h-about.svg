@@ -1,18 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="66" viewBox="0 0 900 66" role="img" aria-label="01 WHOAMI">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="64" viewBox="0 0 900 64" role="img" aria-label="01 MISSION BRIEFING">
   <defs>
-  <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0" stop-color="#38bdf8"/>
-    <stop offset="0.55" stop-color="#818cf8"/>
-    <stop offset="1" stop-color="#2dd4bf"/>
+  <linearGradient id="accent" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#ff8c1a"/>
+    <stop offset="1" stop-color="#7CFC00"/>
   </linearGradient>
-  <linearGradient id="gv" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#38bdf8"/>
-    <stop offset="1" stop-color="#2dd4bf"/>
-  </linearGradient></defs>
-  <rect width="900" height="66" rx="12" fill="#0f172a"/>
-  <rect x="0.5" y="0.5" width="899" height="65" rx="11.5" fill="none" stroke="#24304d"/>
-  <rect x="0" y="0" width="5" height="66" rx="2" fill="url(#gv)"/>
-  <text x="28" y="41" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="700" fill="url(#g)">01</text>
-  <text x="74" y="41" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="21" font-weight="700" fill="#f1f5f9">WHOAMI</text>
-  <text x="872" y="40" text-anchor="end" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="12.5" fill="#8595b3">about</text>
+  <linearGradient id="ghead" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#7CFC00"/>
+    <stop offset="1" stop-color="#ff8c1a"/>
+  </linearGradient>
+  <pattern id="scan" width="3" height="3" patternUnits="userSpaceOnUse">
+    <rect width="3" height="1" fill="#12301a" opacity="0.35"/>
+  </pattern>
+  <radialGradient id="vig" cx="0.2" cy="0" r="1.1">
+    <stop offset="0" stop-color="#7CFC00" stop-opacity="0.10"/>
+    <stop offset="0.6" stop-color="#ff8c1a" stop-opacity="0.03"/>
+    <stop offset="1" stop-color="#0a0f0a" stop-opacity="0"/>
+  </radialGradient></defs>
+  <rect width="900" height="64" rx="10" fill="#0c120c"/>
+  <rect width="900" height="64" rx="10" fill="url(#scan)"/>
+  <rect x="0.5" y="0.5" width="899" height="63" rx="9.5" fill="none" stroke="#1f3d24"/>
+  <path d="M10 23 L10 10 L23 10 M877 10 L890 10 L890 23 M890 41 L890 54 L877 54 M23 54 L10 54 L10 41" fill="none" stroke="#7CFC00" stroke-width="2"/>
+  <path d="M24 20 L36 32 L24 44" fill="none" stroke="#ff8c1a" stroke-width="2.5"/>
+  <text x="52" y="40" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="20" font-weight="700" fill="#7CFC00">01</text>
+  <text x="98" y="40" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#5f7a5a">//</text>
+  <text x="122" y="40" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="21" font-weight="700" letter-spacing="1" fill="#e9fbe4">MISSION BRIEFING</text>
+  <text x="874" y="39" text-anchor="end" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="12.5" fill="#ff8c1a">[ whoami ]</text>
 </svg>
