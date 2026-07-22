@@ -24,10 +24,12 @@ My work sits where platform engineering, FinOps, and governance meet: guardrails
 
 <br />
 
-![Platform Engineering](https://img.shields.io/badge/Platform%20Engineering-22d3ee?style=flat-square&labelColor=0a0e1a)
-![FinOps](https://img.shields.io/badge/FinOps-a78bfa?style=flat-square&labelColor=0a0e1a)
-![Kubernetes at Scale](https://img.shields.io/badge/Kubernetes%20at%20Scale-2dd4bf?style=flat-square&logo=kubernetes&logoColor=white&labelColor=0a0e1a)
-![Governance](https://img.shields.io/badge/Governance-22d3ee?style=flat-square&labelColor=0a0e1a)
+<p>
+<img src="https://img.shields.io/badge/Platform%20Engineering-22d3ee?style=flat-square&labelColor=0a0e1a" alt="Platform Engineering" />
+<img src="https://img.shields.io/badge/FinOps-a78bfa?style=flat-square&labelColor=0a0e1a" alt="FinOps" />
+<img src="https://img.shields.io/badge/Kubernetes%20at%20Scale-2dd4bf?style=flat-square&logo=kubernetes&logoColor=white&labelColor=0a0e1a" alt="Kubernetes at Scale" />
+<img src="https://img.shields.io/badge/Governance-22d3ee?style=flat-square&labelColor=0a0e1a" alt="Governance" />
+</p>
 
 <br />
 
