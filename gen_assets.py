@@ -1,165 +1,186 @@
 #!/usr/bin/env python3
-"""Generate the Call-of-Duty "Operator Dossier" SVG banner set for the README.
+"""Generate the "Living Architecture" animated-SVG banner set for the README.
 
-Self-contained SVGs (no external fonts/scripts) so GitHub renders them
-reliably. Tactical military-HUD aesthetic: night-vision green + tactical
-orange on near-black, corner reticle brackets, scanlines, classified stamp.
+Self-contained SVGs with SMIL animation (no JS, no external services) so they
+animate reliably when GitHub embeds them as images. The hero renders Pradeep as
+the control plane at the center of a topology of the systems he runs, with data
+packets flowing the wires, pulsing nodes, and a radar ping from the core.
 """
 
+import math
 from pathlib import Path
 
 OUT = Path(__file__).parent / "assets"
 OUT.mkdir(exist_ok=True)
 
-# --- Tactical palette -------------------------------------------------------
-BG = "#0a0f0a"       # near-black field
-PANEL = "#0c120c"    # section panel
-BORDER = "#1f3d24"   # dark mil-green edge
-GRID = "#12301a"     # faint grid/scanline
-TEXT = "#b7c9b0"     # body
-DIM = "#5f7a5a"      # muted labels
-HEAD = "#e9fbe4"     # bright headings
-ORANGE = "#ff8c1a"   # tactical orange
-NV = "#7CFC00"       # night-vision green
-RED = "#ff3b30"      # REC / alert
+# --- Palette (deep-space cloud topology) -----------------------------------
+BG = "#0a0e1a"
+PANEL = "#0e1426"
+EDGE = "#20304f"
+NODE = "#101a30"
+NODE_BD = "#2b4a78"
+TEXT = "#aeb9d4"
+DIM = "#5f6f92"
+HEAD = "#f2f6ff"
+CYAN = "#22d3ee"
+VIOLET = "#a78bfa"
+TEAL = "#2dd4bf"
+PKT = "#7dd3fc"
 MONO = "ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace"
 
 
-def defs() -> str:
+def common_defs() -> str:
     return f"""
-  <linearGradient id="accent" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="{ORANGE}"/>
-    <stop offset="1" stop-color="{NV}"/>
-  </linearGradient>
-  <linearGradient id="ghead" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0" stop-color="{NV}"/>
-    <stop offset="1" stop-color="{ORANGE}"/>
-  </linearGradient>
-  <pattern id="scan" width="3" height="3" patternUnits="userSpaceOnUse">
-    <rect width="3" height="1" fill="{GRID}" opacity="0.35"/>
-  </pattern>
-  <radialGradient id="vig" cx="0.2" cy="0" r="1.1">
-    <stop offset="0" stop-color="{NV}" stop-opacity="0.10"/>
-    <stop offset="0.6" stop-color="{ORANGE}" stop-opacity="0.03"/>
-    <stop offset="1" stop-color="{BG}" stop-opacity="0"/>
-  </radialGradient>"""
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="{CYAN}"/>
+      <stop offset="0.5" stop-color="{VIOLET}"/>
+      <stop offset="1" stop-color="{TEAL}"/>
+    </linearGradient>
+    <linearGradient id="wire" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="{CYAN}"/>
+      <stop offset="1" stop-color="{VIOLET}"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="{VIOLET}" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="{BG}" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2.4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0 L0 0 0 30" fill="none" stroke="#111a30" stroke-width="1"/>
+    </pattern>"""
 
 
-def corners(w: int, h: int, inset: int = 14, ln: int = 20, col: str = ORANGE) -> str:
-    """Four L-shaped HUD reticle brackets."""
-    x0, y0, x1, y1 = inset, inset, w - inset, h - inset
-    p = (
-        f'M{x0} {y0+ln} L{x0} {y0} L{x0+ln} {y0} '
-        f'M{x1-ln} {y0} L{x1} {y0} L{x1} {y0+ln} '
-        f'M{x1} {y1-ln} L{x1} {y1} L{x1-ln} {y1} '
-        f'M{x0+ln} {y1} L{x0} {y1} L{x0} {y1-ln}'
-    )
-    return f'<path d="{p}" fill="none" stroke="{col}" stroke-width="2"/>'
+def node(cx: float, cy: float, title: str, sub: str, delay: float, accent: str) -> str:
+    w, h = 168, 50
+    x, y = cx - w / 2, cy - h / 2
+    return f"""
+  <g>
+    <rect x="{x:.0f}" y="{y:.0f}" width="{w}" height="{h}" rx="10" fill="{NODE}" stroke="{NODE_BD}"/>
+    <circle cx="{x+16:.0f}" cy="{cy:.0f}" r="4" fill="{accent}" filter="url(#glow)">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.6s" begin="{delay}s" repeatCount="indefinite"/>
+    </circle>
+    <text x="{x+30:.0f}" y="{cy-3:.0f}" font-family="{MONO}" font-size="13" font-weight="700" fill="{HEAD}">{title}</text>
+    <text x="{x+30:.0f}" y="{cy+13:.0f}" font-family="{MONO}" font-size="10.5" fill="{DIM}">{sub}</text>
+  </g>"""
 
 
-def reticle(cx: int, cy: int, r: int = 26) -> str:
-    return (
-        f'<g stroke="{NV}" stroke-width="1.5" fill="none" opacity="0.85">'
-        f'<circle cx="{cx}" cy="{cy}" r="{r}"/>'
-        f'<circle cx="{cx}" cy="{cy}" r="{r-9}" opacity="0.5"/>'
-        f'<line x1="{cx-r-6}" y1="{cy}" x2="{cx-r+8}" y2="{cy}"/>'
-        f'<line x1="{cx+r-8}" y1="{cy}" x2="{cx+r+6}" y2="{cy}"/>'
-        f'<line x1="{cx}" y1="{cy-r-6}" x2="{cx}" y2="{cy-r+8}"/>'
-        f'<line x1="{cx}" y1="{cy+r-8}" x2="{cx}" y2="{cy+r+6}"/>'
-        f'</g><circle cx="{cx}" cy="{cy}" r="2" fill="{ORANGE}"/>'
-    )
-
-
-def prestige(x: int, y: int, filled: int = 8, total: int = 10, seg_w: int = 26) -> str:
-    out = []
-    for i in range(total):
-        col = ORANGE if i < filled else "#20301e"
-        out.append(
-            f'<rect x="{x + i*(seg_w+4)}" y="{y}" width="{seg_w}" height="9" '
-            f'rx="1" fill="{col}"/>'
-        )
-    return "".join(out)
+def wire(x1: float, y1: float, x2: float, y2: float, delay: float) -> str:
+    # trim the endpoint back toward centre so packets die at the node edge
+    ang = math.atan2(y2 - y1, x2 - x1)
+    ex, ey = x2 - 86 * math.cos(ang), y2 - 26 * math.sin(ang)
+    path = f"M{x1:.0f} {y1:.0f} L{ex:.0f} {ey:.0f}"
+    return f"""
+  <path d="{path}" fill="none" stroke="{EDGE}" stroke-width="1.4"
+        stroke-dasharray="3 7">
+    <animate attributeName="stroke-dashoffset" from="0" to="-40" dur="1.6s" repeatCount="indefinite"/>
+  </path>
+  <circle r="3.2" fill="{PKT}" filter="url(#glow)">
+    <animateMotion dur="2.4s" begin="{delay}s" repeatCount="indefinite" path="{path}"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="2.4s" begin="{delay}s" repeatCount="indefinite"/>
+  </circle>"""
 
 
 def hero() -> str:
-    W, H = 900, 330
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Operator Dossier — Pradeep Maddi, Cloud Platform Engineer and FinOps">
-  <defs>{defs()}</defs>
-  <rect width="{W}" height="{H}" rx="14" fill="{BG}"/>
-  <rect width="{W}" height="{H}" rx="14" fill="url(#vig)"/>
-  <rect width="{W}" height="{H}" rx="14" fill="url(#scan)"/>
-  <rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="13.5" fill="none" stroke="{BORDER}"/>
-  {corners(W, H)}
-  {reticle(812, 150, 30)}
+    W, H = 900, 430
+    cx, cy = 450, 210
+    rx, ry = 300, 150
+    nodes = [
+        (90,  "150+ AWS ACCOUNTS", "control tower + AFT", CYAN),
+        (150, "CONTROL TOWER",     "governance baseline", VIOLET),
+        (210, "TERRAFORM · IaC",   "OpenTofu · Spacelift", TEAL),
+        (330, "GUARDDUTY · SCPs",  "org-wide security",  CYAN),
+        (270, "FINOPS · FOCUS 1.2","evidence-based",     VIOLET),
+        (30,  "EKS · KARPENTER",   "multi-tenant K8s",   TEAL),
+    ]
+    pts = [(a, cx + rx * math.cos(math.radians(a)), cy - ry * math.sin(math.radians(a)),
+            t, s, c) for a, t, s, c in nodes]
 
-  <!-- REC + timecode -->
-  <circle cx="42" cy="40" r="5" fill="{RED}"/>
-  <text x="56" y="45" font-family="{MONO}" font-size="13" font-weight="700" fill="{RED}">REC</text>
-  <text x="94" y="45" font-family="{MONO}" font-size="12.5" fill="{DIM}">00:00:07:12   ·   FEED 04</text>
+    wires = "".join(wire(cx, cy, x, y, i * 0.35) for i, (_, x, y, *_ ) in enumerate(pts))
+    boxes = "".join(node(x, y, t, s, i * 0.4, c) for i, (_, x, y, t, s, c) in enumerate(pts))
 
-  <!-- CLASSIFIED stamp -->
-  <g transform="translate(690 24)">
-    <rect x="0" y="0" width="168" height="30" rx="3" fill="none" stroke="{ORANGE}" stroke-width="1.5"/>
-    <text x="84" y="20" text-anchor="middle" font-family="{MONO}" font-size="12.5" font-weight="700" letter-spacing="2" fill="{ORANGE}">TS // SCI  CLASSIFIED</text>
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Pradeep Maddi — the control plane at the centre of a cloud platform topology">
+  <defs>{common_defs()}</defs>
+  <rect width="{W}" height="{H}" rx="16" fill="{BG}"/>
+  <rect width="{W}" height="{H}" rx="16" fill="url(#grid)"/>
+  <rect x="{cx-260}" y="{cy-160}" width="520" height="320" fill="url(#halo)"/>
+  <rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="15.5" fill="none" stroke="{EDGE}"/>
+
+  {wires}
+
+  <!-- radar ping from the core -->
+  <circle cx="{cx}" cy="{cy}" r="60" fill="none" stroke="{CYAN}" stroke-width="1.5">
+    <animate attributeName="r" values="58;150" dur="3.4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.55;0" dur="3.4s" repeatCount="indefinite"/>
+  </circle>
+
+  {boxes}
+
+  <!-- control-plane core -->
+  <g>
+    <rect x="{cx-116}" y="{cy-42}" width="232" height="84" rx="14" fill="{PANEL}" stroke="url(#core)" stroke-width="2"/>
+    <circle cx="{cx-92}" cy="{cy-20}" r="3.5" fill="{CYAN}"/>
+    <text x="{cx}" y="{cy-4}" text-anchor="middle" font-family="{MONO}" font-size="26" font-weight="700" fill="{HEAD}">PRADEEP MADDI</text>
+    <text x="{cx}" y="{cy+22}" text-anchor="middle" font-family="{MONO}" font-size="12.5" letter-spacing="2" fill="url(#core)">CLOUD PLATFORM ENGINEER · FINOPS</text>
   </g>
 
-  <!-- accent bar + identity -->
-  <rect x="40" y="86" width="6" height="176" rx="3" fill="url(#accent)"/>
-  <text x="70" y="106" font-family="{MONO}" font-size="13" letter-spacing="3" fill="{NV}">OPERATOR DOSSIER  //  OPSEC LEVEL 5</text>
-  <text x="68" y="164" font-family="{MONO}" font-size="52" font-weight="700" fill="{HEAD}">PRADEEP MADDI</text>
-  <text x="70" y="198" font-family="{MONO}" font-size="19" font-weight="700" fill="{ORANGE}">PLATFORM ENGINEER  //  FINOPS OPERATOR</text>
-
-  <!-- data readout -->
-  <text x="70" y="234" font-family="{MONO}" font-size="13.5" fill="{TEXT}"><tspan fill="{DIM}">CALLSIGN &#8250; </tspan>CLOUDOPS<tspan fill="{DIM}">    THEATER &#8250; </tspan>150+ ACCOUNT AWS ORG</text>
-  <text x="70" y="256" font-family="{MONO}" font-size="13.5" fill="{TEXT}"><tspan fill="{DIM}">STATUS &#8250; </tspan>DEPLOYED · FAIL-CLOSED<tspan fill="{DIM}">    CLEARANCE &#8250; </tspan>ADMIN</text>
-
-  <!-- prestige + grid -->
-  <text x="70" y="298" font-family="{MONO}" font-size="12" letter-spacing="2" fill="{DIM}">PRESTIGE</text>
-  {prestige(150, 289)}
-  <text x="{W-30}" y="298" text-anchor="end" font-family="{MONO}" font-size="12" fill="{DIM}">GRID 51.04&#176;N 114.07&#176;W · YYC</text>
+  <text x="30" y="{H-22}" font-family="{MONO}" font-size="12" fill="{DIM}">// control plane · 150+ account AWS Organization</text>
+  <text x="{W-30}" y="{H-22}" text-anchor="end" font-family="{MONO}" font-size="12" fill="{DIM}">fail-closed by design</text>
 </svg>"""
 
 
 def section(num: str, title: str, sub: str) -> str:
     esc = lambda s: s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
     num, title, sub = esc(num), esc(title), esc(sub)
-    W, H = 900, 64
+    W, H = 900, 56
+    line_y = H // 2
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="{num} {title}">
-  <defs>{defs()}</defs>
+  <defs>{common_defs()}</defs>
   <rect width="{W}" height="{H}" rx="10" fill="{PANEL}"/>
-  <rect width="{W}" height="{H}" rx="10" fill="url(#scan)"/>
-  <rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="9.5" fill="none" stroke="{BORDER}"/>
-  {corners(W, H, inset=10, ln=13, col=NV)}
-  <path d="M24 20 L36 32 L24 44" fill="none" stroke="{ORANGE}" stroke-width="2.5"/>
-  <text x="52" y="40" font-family="{MONO}" font-size="20" font-weight="700" fill="{NV}">{num}</text>
-  <text x="98" y="40" font-family="{MONO}" font-size="12" fill="{DIM}">//</text>
-  <text x="122" y="40" font-family="{MONO}" font-size="21" font-weight="700" letter-spacing="1" fill="{HEAD}">{title}</text>
-  <text x="{W-26}" y="39" text-anchor="end" font-family="{MONO}" font-size="12.5" fill="{ORANGE}">[ {sub} ]</text>
+  <rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="9.5" fill="none" stroke="{EDGE}"/>
+  <circle cx="26" cy="{line_y}" r="5" fill="{CYAN}" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+  <text x="46" y="{line_y+6}" font-family="{MONO}" font-size="18" font-weight="700" fill="url(#wire)">{num}</text>
+  <text x="86" y="{line_y+6}" font-family="{MONO}" font-size="18" font-weight="700" letter-spacing="1" fill="{HEAD}">{title}</text>
+  <path d="M{300} {line_y} L{W-150} {line_y}" stroke="{EDGE}" stroke-width="1.2" stroke-dasharray="3 7">
+    <animate attributeName="stroke-dashoffset" from="0" to="-40" dur="1.6s" repeatCount="indefinite"/>
+  </path>
+  <circle r="2.6" fill="{PKT}" filter="url(#glow)">
+    <animateMotion dur="2.6s" repeatCount="indefinite" path="M300 {line_y} L{W-150} {line_y}"/>
+  </circle>
+  <text x="{W-26}" y="{line_y+5}" text-anchor="end" font-family="{MONO}" font-size="12.5" fill="{DIM}">{sub}</text>
 </svg>"""
 
 
 def footer() -> str:
-    W, H = 900, 92
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Signal out — open to Principal and Senior Cloud Platform Engineering roles">
-  <defs>{defs()}</defs>
+    W, H = 900, 84
+    cx = W // 2
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Open to Principal and Senior Cloud Platform Engineering roles">
+  <defs>{common_defs()}</defs>
   <rect width="{W}" height="{H}" rx="10" fill="{BG}"/>
-  <rect width="{W}" height="{H}" rx="10" fill="url(#scan)"/>
-  <rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="9.5" fill="none" stroke="{BORDER}"/>
-  {corners(W, H, inset=10, ln=15, col=ORANGE)}
-  {reticle(W//2, 40, 15)}
-  <text x="{W//2}" y="74" text-anchor="middle" font-family="{MONO}" font-size="13" letter-spacing="1.5" fill="{DIM}"><tspan fill="{NV}">// SIGNAL OUT &#183; </tspan>OPEN TO PRINCIPAL / SENIOR CLOUD PLATFORM &#183; AWS &#183; FINOPS</text>
+  <rect width="{W}" height="{H}" rx="10" fill="url(#grid)"/>
+  <rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="9.5" fill="none" stroke="{EDGE}"/>
+  <circle cx="{cx}" cy="30" r="8" fill="none" stroke="{CYAN}" stroke-width="1.5">
+    <animate attributeName="r" values="7;16" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.7;0" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="{cx}" cy="30" r="3" fill="url(#core)"/>
+  <text x="{cx}" y="66" text-anchor="middle" font-family="{MONO}" font-size="13" letter-spacing="1.5" fill="{DIM}"><tspan fill="{CYAN}">// online · </tspan>OPEN TO PRINCIPAL / SENIOR CLOUD PLATFORM · AWS · FINOPS</text>
 </svg>"""
 
 
 assets = {
     "hero.svg": hero(),
-    "h-about.svg": section("01", "MISSION BRIEFING", "whoami"),
-    "h-impact.svg": section("02", "THEATER OF OPS", "scope & impact"),
-    "h-projects.svg": section("03", "OPERATIONS LOG", "selected work"),
-    "h-stack.svg": section("04", "LOADOUT", "tech stack"),
-    "h-certs.svg": section("05", "DOG TAGS", "credentials"),
-    "h-writing.svg": section("06", "INTEL", "field notes"),
-    "h-contact.svg": section("07", "EXFIL", "contact"),
+    "h-about.svg": section("01", "WHOAMI", "about"),
+    "h-impact.svg": section("02", "SCOPE & IMPACT", "what I run"),
+    "h-projects.svg": section("03", "SELECTED WORK", "open source"),
+    "h-stack.svg": section("04", "TECH STACK", "toolchain"),
+    "h-certs.svg": section("05", "CREDENTIALS", "verified"),
+    "h-writing.svg": section("06", "FIELD NOTES", "writing"),
+    "h-contact.svg": section("07", "ESTABLISH LINK", "contact"),
     "footer.svg": footer(),
 }
 

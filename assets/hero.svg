@@ -1,51 +1,144 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="330" viewBox="0 0 900 330" role="img" aria-label="Operator Dossier — Pradeep Maddi, Cloud Platform Engineer and FinOps">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="430" viewBox="0 0 900 430" role="img" aria-label="Pradeep Maddi — the control plane at the centre of a cloud platform topology">
   <defs>
-  <linearGradient id="accent" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#ff8c1a"/>
-    <stop offset="1" stop-color="#7CFC00"/>
-  </linearGradient>
-  <linearGradient id="ghead" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0" stop-color="#7CFC00"/>
-    <stop offset="1" stop-color="#ff8c1a"/>
-  </linearGradient>
-  <pattern id="scan" width="3" height="3" patternUnits="userSpaceOnUse">
-    <rect width="3" height="1" fill="#12301a" opacity="0.35"/>
-  </pattern>
-  <radialGradient id="vig" cx="0.2" cy="0" r="1.1">
-    <stop offset="0" stop-color="#7CFC00" stop-opacity="0.10"/>
-    <stop offset="0.6" stop-color="#ff8c1a" stop-opacity="0.03"/>
-    <stop offset="1" stop-color="#0a0f0a" stop-opacity="0"/>
-  </radialGradient></defs>
-  <rect width="900" height="330" rx="14" fill="#0a0f0a"/>
-  <rect width="900" height="330" rx="14" fill="url(#vig)"/>
-  <rect width="900" height="330" rx="14" fill="url(#scan)"/>
-  <rect x="0.5" y="0.5" width="899" height="329" rx="13.5" fill="none" stroke="#1f3d24"/>
-  <path d="M14 34 L14 14 L34 14 M866 14 L886 14 L886 34 M886 296 L886 316 L866 316 M34 316 L14 316 L14 296" fill="none" stroke="#ff8c1a" stroke-width="2"/>
-  <g stroke="#7CFC00" stroke-width="1.5" fill="none" opacity="0.85"><circle cx="812" cy="150" r="30"/><circle cx="812" cy="150" r="21" opacity="0.5"/><line x1="776" y1="150" x2="790" y2="150"/><line x1="834" y1="150" x2="848" y2="150"/><line x1="812" y1="114" x2="812" y2="128"/><line x1="812" y1="172" x2="812" y2="186"/></g><circle cx="812" cy="150" r="2" fill="#ff8c1a"/>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="0.5" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#2dd4bf"/>
+    </linearGradient>
+    <linearGradient id="wire" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#a78bfa" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#0a0e1a" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2.4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0 L0 0 0 30" fill="none" stroke="#111a30" stroke-width="1"/>
+    </pattern></defs>
+  <rect width="900" height="430" rx="16" fill="#0a0e1a"/>
+  <rect width="900" height="430" rx="16" fill="url(#grid)"/>
+  <rect x="190" y="50" width="520" height="320" fill="url(#halo)"/>
+  <rect x="0.5" y="0.5" width="899" height="429" rx="15.5" fill="none" stroke="#20304f"/>
 
-  <!-- REC + timecode -->
-  <circle cx="42" cy="40" r="5" fill="#ff3b30"/>
-  <text x="56" y="45" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="700" fill="#ff3b30">REC</text>
-  <text x="94" y="45" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="12.5" fill="#5f7a5a">00:00:07:12   ·   FEED 04</text>
+  
+  <path d="M450 210 L450 86" fill="none" stroke="#20304f" stroke-width="1.4"
+        stroke-dasharray="3 7">
+    <animate attributeName="stroke-dashoffset" from="0" to="-40" dur="1.6s" repeatCount="indefinite"/>
+  </path>
+  <circle r="3.2" fill="#7dd3fc" filter="url(#glow)">
+    <animateMotion dur="2.4s" begin="0.0s" repeatCount="indefinite" path="M450 210 L450 86"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="2.4s" begin="0.0s" repeatCount="indefinite"/>
+  </circle>
+  <path d="M450 210 L273 142" fill="none" stroke="#20304f" stroke-width="1.4"
+        stroke-dasharray="3 7">
+    <animate attributeName="stroke-dashoffset" from="0" to="-40" dur="1.6s" repeatCount="indefinite"/>
+  </path>
+  <circle r="3.2" fill="#7dd3fc" filter="url(#glow)">
+    <animateMotion dur="2.4s" begin="0.35s" repeatCount="indefinite" path="M450 210 L273 142"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="2.4s" begin="0.35s" repeatCount="indefinite"/>
+  </circle>
+  <path d="M450 210 L273 278" fill="none" stroke="#20304f" stroke-width="1.4"
+        stroke-dasharray="3 7">
+    <animate attributeName="stroke-dashoffset" from="0" to="-40" dur="1.6s" repeatCount="indefinite"/>
+  </path>
+  <circle r="3.2" fill="#7dd3fc" filter="url(#glow)">
+    <animateMotion dur="2.4s" begin="0.7s" repeatCount="indefinite" path="M450 210 L273 278"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="2.4s" begin="0.7s" repeatCount="indefinite"/>
+  </circle>
+  <path d="M450 210 L627 278" fill="none" stroke="#20304f" stroke-width="1.4"
+        stroke-dasharray="3 7">
+    <animate attributeName="stroke-dashoffset" from="0" to="-40" dur="1.6s" repeatCount="indefinite"/>
+  </path>
+  <circle r="3.2" fill="#7dd3fc" filter="url(#glow)">
+    <animateMotion dur="2.4s" begin="1.0499999999999998s" repeatCount="indefinite" path="M450 210 L627 278"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="2.4s" begin="1.0499999999999998s" repeatCount="indefinite"/>
+  </circle>
+  <path d="M450 210 L450 334" fill="none" stroke="#20304f" stroke-width="1.4"
+        stroke-dasharray="3 7">
+    <animate attributeName="stroke-dashoffset" from="0" to="-40" dur="1.6s" repeatCount="indefinite"/>
+  </path>
+  <circle r="3.2" fill="#7dd3fc" filter="url(#glow)">
+    <animateMotion dur="2.4s" begin="1.4s" repeatCount="indefinite" path="M450 210 L450 334"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="2.4s" begin="1.4s" repeatCount="indefinite"/>
+  </circle>
+  <path d="M450 210 L627 142" fill="none" stroke="#20304f" stroke-width="1.4"
+        stroke-dasharray="3 7">
+    <animate attributeName="stroke-dashoffset" from="0" to="-40" dur="1.6s" repeatCount="indefinite"/>
+  </path>
+  <circle r="3.2" fill="#7dd3fc" filter="url(#glow)">
+    <animateMotion dur="2.4s" begin="1.75s" repeatCount="indefinite" path="M450 210 L627 142"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="2.4s" begin="1.75s" repeatCount="indefinite"/>
+  </circle>
 
-  <!-- CLASSIFIED stamp -->
-  <g transform="translate(690 24)">
-    <rect x="0" y="0" width="168" height="30" rx="3" fill="none" stroke="#ff8c1a" stroke-width="1.5"/>
-    <text x="84" y="20" text-anchor="middle" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="12.5" font-weight="700" letter-spacing="2" fill="#ff8c1a">TS // SCI  CLASSIFIED</text>
+  <!-- radar ping from the core -->
+  <circle cx="450" cy="210" r="60" fill="none" stroke="#22d3ee" stroke-width="1.5">
+    <animate attributeName="r" values="58;150" dur="3.4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.55;0" dur="3.4s" repeatCount="indefinite"/>
+  </circle>
+
+  
+  <g>
+    <rect x="366" y="35" width="168" height="50" rx="10" fill="#101a30" stroke="#2b4a78"/>
+    <circle cx="382" cy="60" r="4" fill="#22d3ee" filter="url(#glow)">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.6s" begin="0.0s" repeatCount="indefinite"/>
+    </circle>
+    <text x="396" y="57" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="700" fill="#f2f6ff">150+ AWS ACCOUNTS</text>
+    <text x="396" y="73" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#5f6f92">control tower + AFT</text>
+  </g>
+  <g>
+    <rect x="106" y="110" width="168" height="50" rx="10" fill="#101a30" stroke="#2b4a78"/>
+    <circle cx="122" cy="135" r="4" fill="#a78bfa" filter="url(#glow)">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.6s" begin="0.4s" repeatCount="indefinite"/>
+    </circle>
+    <text x="136" y="132" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="700" fill="#f2f6ff">CONTROL TOWER</text>
+    <text x="136" y="148" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#5f6f92">governance baseline</text>
+  </g>
+  <g>
+    <rect x="106" y="260" width="168" height="50" rx="10" fill="#101a30" stroke="#2b4a78"/>
+    <circle cx="122" cy="285" r="4" fill="#2dd4bf" filter="url(#glow)">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.6s" begin="0.8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="136" y="282" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="700" fill="#f2f6ff">TERRAFORM · IaC</text>
+    <text x="136" y="298" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#5f6f92">OpenTofu · Spacelift</text>
+  </g>
+  <g>
+    <rect x="626" y="260" width="168" height="50" rx="10" fill="#101a30" stroke="#2b4a78"/>
+    <circle cx="642" cy="285" r="4" fill="#22d3ee" filter="url(#glow)">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.6s" begin="1.2000000000000002s" repeatCount="indefinite"/>
+    </circle>
+    <text x="656" y="282" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="700" fill="#f2f6ff">GUARDDUTY · SCPs</text>
+    <text x="656" y="298" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#5f6f92">org-wide security</text>
+  </g>
+  <g>
+    <rect x="366" y="335" width="168" height="50" rx="10" fill="#101a30" stroke="#2b4a78"/>
+    <circle cx="382" cy="360" r="4" fill="#a78bfa" filter="url(#glow)">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.6s" begin="1.6s" repeatCount="indefinite"/>
+    </circle>
+    <text x="396" y="357" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="700" fill="#f2f6ff">FINOPS · FOCUS 1.2</text>
+    <text x="396" y="373" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#5f6f92">evidence-based</text>
+  </g>
+  <g>
+    <rect x="626" y="110" width="168" height="50" rx="10" fill="#101a30" stroke="#2b4a78"/>
+    <circle cx="642" cy="135" r="4" fill="#2dd4bf" filter="url(#glow)">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.6s" begin="2.0s" repeatCount="indefinite"/>
+    </circle>
+    <text x="656" y="132" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="700" fill="#f2f6ff">EKS · KARPENTER</text>
+    <text x="656" y="148" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#5f6f92">multi-tenant K8s</text>
   </g>
 
-  <!-- accent bar + identity -->
-  <rect x="40" y="86" width="6" height="176" rx="3" fill="url(#accent)"/>
-  <text x="70" y="106" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="13" letter-spacing="3" fill="#7CFC00">OPERATOR DOSSIER  //  OPSEC LEVEL 5</text>
-  <text x="68" y="164" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="52" font-weight="700" fill="#e9fbe4">PRADEEP MADDI</text>
-  <text x="70" y="198" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="19" font-weight="700" fill="#ff8c1a">PLATFORM ENGINEER  //  FINOPS OPERATOR</text>
+  <!-- control-plane core -->
+  <g>
+    <rect x="334" y="168" width="232" height="84" rx="14" fill="#0e1426" stroke="url(#core)" stroke-width="2"/>
+    <circle cx="358" cy="190" r="3.5" fill="#22d3ee"/>
+    <text x="450" y="206" text-anchor="middle" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="26" font-weight="700" fill="#f2f6ff">PRADEEP MADDI</text>
+    <text x="450" y="232" text-anchor="middle" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="12.5" letter-spacing="2" fill="url(#core)">CLOUD PLATFORM ENGINEER · FINOPS</text>
+  </g>
 
-  <!-- data readout -->
-  <text x="70" y="234" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" fill="#b7c9b0"><tspan fill="#5f7a5a">CALLSIGN &#8250; </tspan>CLOUDOPS<tspan fill="#5f7a5a">    THEATER &#8250; </tspan>150+ ACCOUNT AWS ORG</text>
-  <text x="70" y="256" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" fill="#b7c9b0"><tspan fill="#5f7a5a">STATUS &#8250; </tspan>DEPLOYED · FAIL-CLOSED<tspan fill="#5f7a5a">    CLEARANCE &#8250; </tspan>ADMIN</text>
-
-  <!-- prestige + grid -->
-  <text x="70" y="298" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="12" letter-spacing="2" fill="#5f7a5a">PRESTIGE</text>
-  <rect x="150" y="289" width="26" height="9" rx="1" fill="#ff8c1a"/><rect x="180" y="289" width="26" height="9" rx="1" fill="#ff8c1a"/><rect x="210" y="289" width="26" height="9" rx="1" fill="#ff8c1a"/><rect x="240" y="289" width="26" height="9" rx="1" fill="#ff8c1a"/><rect x="270" y="289" width="26" height="9" rx="1" fill="#ff8c1a"/><rect x="300" y="289" width="26" height="9" rx="1" fill="#ff8c1a"/><rect x="330" y="289" width="26" height="9" rx="1" fill="#ff8c1a"/><rect x="360" y="289" width="26" height="9" rx="1" fill="#ff8c1a"/><rect x="390" y="289" width="26" height="9" rx="1" fill="#20301e"/><rect x="420" y="289" width="26" height="9" rx="1" fill="#20301e"/>
-  <text x="870" y="298" text-anchor="end" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#5f7a5a">GRID 51.04&#176;N 114.07&#176;W · YYC</text>
+  <text x="30" y="408" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#5f6f92">// control plane · 150+ account AWS Organization</text>
+  <text x="870" y="408" text-anchor="end" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#5f6f92">fail-closed by design</text>
 </svg>
