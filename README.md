@@ -12,22 +12,32 @@
 
 <img src="assets/h-about.svg" width="100%" alt="01 · WHOAMI" />
 
+<br />
+
 **Cloud Platform Engineer · FinOps** &nbsp;·&nbsp; Calgary, Canada 🇨🇦 &nbsp;·&nbsp; 150+ account AWS Organization
 
-I make cost, security, and reliability **enforceable** — not aspirational. My work sits where
-platform engineering, FinOps, and governance meet: guardrails that fail closed, evidence that
-survives an audit, and automation that takes humans out of the critical path.
+<br />
+
+I make cost, security, and reliability **enforceable** — not aspirational.
+
+My work sits where platform engineering, FinOps, and governance meet: guardrails that fail closed, evidence that survives an audit, and automation that takes humans out of the critical path.
+
+<br />
 
 ![Platform Engineering](https://img.shields.io/badge/Platform%20Engineering-22d3ee?style=flat-square&labelColor=0a0e1a)
 ![FinOps](https://img.shields.io/badge/FinOps-a78bfa?style=flat-square&labelColor=0a0e1a)
 ![Kubernetes at Scale](https://img.shields.io/badge/Kubernetes%20at%20Scale-2dd4bf?style=flat-square&logo=kubernetes&logoColor=white&labelColor=0a0e1a)
 ![Governance](https://img.shields.io/badge/Governance-22d3ee?style=flat-square&labelColor=0a0e1a)
 
-> 🚀 **Currently shipping →** [cloud-finops-agent](https://github.com/prmaddi6233/cloud-finops-agent): tiered, fail-closed cost validation — deterministic rules, production metrics, and Lambda canary with automated rollback. [Read why →](https://github.com/prmaddi6233/cloud-finops-agent/blob/main/docs/blog-why-sandbox-benchmarks-fail.md)
+<br />
 
-> Cost and security recommendations rot in backlogs because nobody proves they're safe to apply. **I build the evidence layer that does.**
+> 🚀 **Currently shipping →** [cloud-finops-agent](https://github.com/prmaddi6233/cloud-finops-agent) — tiered, fail-closed cost validation with production canaries and SARIF findings. [Read why →](https://github.com/prmaddi6233/cloud-finops-agent/blob/main/docs/blog-why-sandbox-benchmarks-fail.md)
 
-Principles I build by:
+<br />
+
+<details>
+<summary><b>Principles I build by</b></summary>
+<br />
 
 | Principle | Why it holds |
 |---|---|
@@ -36,70 +46,98 @@ Principles I build by:
 | Document *why-not*, not just *how* | Rejected options are what stop repeated mistakes |
 | Evidence over assertion | A claim without a check is a hope, not a control |
 
+</details>
+
+<br />
+
 <img src="assets/h-impact.svg" width="100%" alt="02 · SCOPE & IMPACT" />
 
-<div align="center">
-
-<img src="assets/metrics.svg" width="100%" alt="150+ AWS accounts · $500K+/yr identified savings · 150 accounts guarded · 100% IaC-managed" />
-
-</div>
+<br />
 
 <div align="center">
+
+<img src="assets/metrics.svg" width="100%" alt="150+ AWS accounts · $500K+/yr identified savings · 100% IaC-managed" />
+
 <sub>150+ AWS accounts · $500K+/yr identified savings · 100% IaC-managed</sub>
+
 </div>
 
-- **150+ AWS accounts** governed through Control Tower + AFT — policy-gated vending with cost attribution baked in from account zero.
-- **Kubernetes at scale** — multi-tenant EKS with Karpenter, Kyverno guardrails, and per-namespace budgets so no tenant outspends its envelope.
-- **Evidence-based FinOps** — surfaced **$500K+/yr** in defensible savings (RI/SP coverage, Graviton, gp2→gp3, storage lifecycle), each with a proof step before it ships.
-- **Org-wide security posture** — own the preventive→detective→audit stack: centralized access via IAM Identity Center (SSO + permission sets), SCPs and IAM/OIDC guardrails, GuardDuty + Security Hub + AWS Config across all 150 accounts, KMS and WAF baselines — all Terraform-managed and drift-free.
-- **Fail-closed automation** — SARIF findings, OIDC-scoped access, and production canaries instead of sandbox benchmarks that lie.
+<br />
+
+🏢 **150+ AWS accounts** — Control Tower + AFT, policy-gated vending, cost attribution from day one.
+
+☸ **Kubernetes at scale** — Multi-tenant EKS with Karpenter, Kyverno guardrails, per-namespace budgets.
+
+💰 **$500K+/yr savings** — RI/SP coverage, Graviton, gp2→gp3, storage lifecycle — each with a proof step.
+
+🛡️ **Org-wide security** — IAM Identity Center, SCPs, GuardDuty + Security Hub + Config across all accounts.
+
+⚙️ **Fail-closed automation** — SARIF findings, OIDC-scoped access, production canaries.
+
+<br />
 
 <img src="assets/h-projects.svg" width="100%" alt="03 · SELECTED WORK" />
+
+<br />
 
 <table>
 <tr>
 <td width="50%" valign="top">
+<br />
 
-**🛰️ [cloud-finops-agent](https://github.com/prmaddi6233/cloud-finops-agent)**
+**🛠️ [cloud-finops-agent](https://github.com/prmaddi6233/cloud-finops-agent)**
 
-Tiered validation engine — math, metrics, then a production canary. SARIF findings, fail-closed, OIDC.
+Tiered validation — math, metrics, production canary.
+SARIF findings. Fail-closed. OIDC.
 
-`Python` · `SARIF` · `GitHub Actions` · `OIDC`
+`Python` · `SARIF` · `GitHub Actions`
 
-[Blog](https://github.com/prmaddi6233/cloud-finops-agent/blob/main/docs/blog-why-sandbox-benchmarks-fail.md) · [ADRs](https://github.com/prmaddi6233/cloud-finops-agent/tree/main/docs/adr)
+[📝 Blog](https://github.com/prmaddi6233/cloud-finops-agent/blob/main/docs/blog-why-sandbox-benchmarks-fail.md) · [📐 ADRs](https://github.com/prmaddi6233/cloud-finops-agent/tree/main/docs/adr)
 
+<br />
 </td>
 <td width="50%" valign="top">
+<br />
 
 **☁️ [aws-platform-control-plane](https://github.com/prmaddi6233/aws-platform-control-plane)**
 
-Self-service account lifecycle — policy-gated provisioning, Step Functions, full audit trail.
+Self-service account lifecycle.
+Policy-gated. Step Functions. Audit trail.
 
 `Python` · `Step Functions` · `DynamoDB`
 
+<br />
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
+<br />
 
 **🏭 [aws-aft-account-factory-blueprint](https://github.com/prmaddi6233/aws-aft-account-factory-blueprint)**
 
-Secure, cost-attributed account vending on Control Tower + AFT.
+Secure, cost-attributed account vending.
+Control Tower + AFT.
 
 `Terraform` · `Control Tower` · `AFT`
 
+<br />
 </td>
 <td width="50%" valign="top">
+<br />
 
 **☸️ [eks-cost-governance-toolkit](https://github.com/prmaddi6233/eks-cost-governance-toolkit)**
 
-Kyverno guardrails + budgeted namespaces for multi-tenant EKS.
+Kyverno guardrails + budgeted namespaces.
+Multi-tenant EKS cost governance.
 
-`Kubernetes` · `Kyverno` · `Helm` · `OpenCost`
+`Kubernetes` · `Kyverno` · `Helm`
 
+<br />
 </td>
 </tr>
 </table>
+
+<br />
 
 <img src="assets/h-stack.svg" width="100%" alt="04 · TECH STACK" />
 
