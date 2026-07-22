@@ -25,10 +25,10 @@ My work sits where platform engineering, FinOps, and governance meet: guardrails
 <br />
 
 <p>
-<img src="https://img.shields.io/badge/Platform%20Engineering-22d3ee?style=flat-square&labelColor=0a0e1a" alt="Platform Engineering" />
-<img src="https://img.shields.io/badge/FinOps-a78bfa?style=flat-square&labelColor=0a0e1a" alt="FinOps" />
-<img src="https://img.shields.io/badge/Kubernetes%20at%20Scale-2dd4bf?style=flat-square&logo=kubernetes&logoColor=white&labelColor=0a0e1a" alt="Kubernetes at Scale" />
-<img src="https://img.shields.io/badge/Governance-22d3ee?style=flat-square&labelColor=0a0e1a" alt="Governance" />
+<a href="#"><img src="https://img.shields.io/badge/Platform%20Engineering-22d3ee?style=flat-square&labelColor=0a0e1a" alt="Platform Engineering" /></a>
+<a href="#"><img src="https://img.shields.io/badge/FinOps-a78bfa?style=flat-square&labelColor=0a0e1a" alt="FinOps" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Kubernetes%20at%20Scale-2dd4bf?style=flat-square&logo=kubernetes&logoColor=white&labelColor=0a0e1a" alt="Kubernetes at Scale" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Governance-22d3ee?style=flat-square&labelColor=0a0e1a" alt="Governance" /></a>
 </p>
 
 <br />
@@ -149,15 +149,15 @@ Multi-tenant EKS cost governance.
 <summary><b>☁️ Cloud & Platform</b></summary>
 <br />
 
-![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white&labelColor=0a0e1a)
-![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white&labelColor=0a0e1a)
-![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white&labelColor=0a0e1a)
-![Control Tower](https://img.shields.io/badge/Control%20Tower-22d3ee?style=flat-square&labelColor=0a0e1a)
-![Organizations](https://img.shields.io/badge/Organizations-a78bfa?style=flat-square&labelColor=0a0e1a)
-![IAM Identity Center](https://img.shields.io/badge/IAM%20Identity%20Center-22d3ee?style=flat-square&labelColor=0a0e1a)
-![VPC](https://img.shields.io/badge/VPC-232F3E?style=flat-square&labelColor=0a0e1a)
-![Route 53](https://img.shields.io/badge/Route%2053-8C4FFF?style=flat-square&logo=amazonroute53&logoColor=white&labelColor=0a0e1a)
-![CloudFront](https://img.shields.io/badge/CloudFront-232F3E?style=flat-square&labelColor=0a0e1a)
+<a href="#"><img src="https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white&labelColor=0a0e1a" alt="AWS" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white&labelColor=0a0e1a" alt="Azure" /></a>
+<a href="#"><img src="https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white&labelColor=0a0e1a" alt="GCP" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Control%20Tower-22d3ee?style=flat-square&labelColor=0a0e1a" alt="Control Tower" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Organizations-a78bfa?style=flat-square&labelColor=0a0e1a" alt="Organizations" /></a>
+<a href="#"><img src="https://img.shields.io/badge/IAM%20Identity%20Center-22d3ee?style=flat-square&labelColor=0a0e1a" alt="IAM Identity Center" /></a>
+<a href="#"><img src="https://img.shields.io/badge/VPC-232F3E?style=flat-square&labelColor=0a0e1a" alt="VPC" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Route%2053-8C4FFF?style=flat-square&logo=amazonroute53&logoColor=white&labelColor=0a0e1a" alt="Route 53" /></a>
+<a href="#"><img src="https://img.shields.io/badge/CloudFront-232F3E?style=flat-square&labelColor=0a0e1a" alt="CloudFront" /></a>
 
 </details>
 
@@ -165,15 +165,15 @@ Multi-tenant EKS cost governance.
 <summary><b>☸️ Containers & Orchestration</b></summary>
 <br />
 
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white&labelColor=0a0e1a)
-![EKS](https://img.shields.io/badge/EKS-FF9900?style=flat-square&logo=amazoneks&logoColor=white&labelColor=0a0e1a)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white&labelColor=0a0e1a)
-![Helm](https://img.shields.io/badge/Helm-0F1689?style=flat-square&logo=helm&logoColor=white&labelColor=0a0e1a)
-![Karpenter](https://img.shields.io/badge/Karpenter-22d3ee?style=flat-square&labelColor=0a0e1a)
-![Kyverno](https://img.shields.io/badge/Kyverno-a78bfa?style=flat-square&labelColor=0a0e1a)
-![ArgoCD](https://img.shields.io/badge/ArgoCD-EF7B4D?style=flat-square&logo=argo&logoColor=white&labelColor=0a0e1a)
-![OpenCost](https://img.shields.io/badge/OpenCost-2dd4bf?style=flat-square&labelColor=0a0e1a)
-![Istio](https://img.shields.io/badge/Istio-466BB0?style=flat-square&logo=istio&logoColor=white&labelColor=0a0e1a)
+<a href="#"><img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white&labelColor=0a0e1a" alt="Kubernetes" /></a>
+<a href="#"><img src="https://img.shields.io/badge/EKS-FF9900?style=flat-square&logo=amazoneks&logoColor=white&labelColor=0a0e1a" alt="EKS" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white&labelColor=0a0e1a" alt="Docker" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Helm-0F1689?style=flat-square&logo=helm&logoColor=white&labelColor=0a0e1a" alt="Helm" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Karpenter-22d3ee?style=flat-square&labelColor=0a0e1a" alt="Karpenter" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Kyverno-a78bfa?style=flat-square&labelColor=0a0e1a" alt="Kyverno" /></a>
+<a href="#"><img src="https://img.shields.io/badge/ArgoCD-EF7B4D?style=flat-square&logo=argo&logoColor=white&labelColor=0a0e1a" alt="ArgoCD" /></a>
+<a href="#"><img src="https://img.shields.io/badge/OpenCost-2dd4bf?style=flat-square&labelColor=0a0e1a" alt="OpenCost" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Istio-466BB0?style=flat-square&logo=istio&logoColor=white&labelColor=0a0e1a" alt="Istio" /></a>
 
 </details>
 
@@ -181,13 +181,13 @@ Multi-tenant EKS cost governance.
 <summary><b>📜 Infrastructure as Code</b></summary>
 <br />
 
-![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white&labelColor=0a0e1a)
-![OpenTofu](https://img.shields.io/badge/OpenTofu-FFDA18?style=flat-square&logo=opentofu&logoColor=black&labelColor=0a0e1a)
-![CloudFormation](https://img.shields.io/badge/CloudFormation-FF4F8B?style=flat-square&labelColor=0a0e1a)
-![Spacelift](https://img.shields.io/badge/Spacelift-2dd4bf?style=flat-square&labelColor=0a0e1a)
-![Terragrunt](https://img.shields.io/badge/Terragrunt-844FBA?style=flat-square&labelColor=0a0e1a)
-![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=flat-square&logo=ansible&logoColor=white&labelColor=0a0e1a)
-![Packer](https://img.shields.io/badge/Packer-02A8EF?style=flat-square&logo=packer&logoColor=white&labelColor=0a0e1a)
+<a href="#"><img src="https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white&labelColor=0a0e1a" alt="Terraform" /></a>
+<a href="#"><img src="https://img.shields.io/badge/OpenTofu-FFDA18?style=flat-square&logo=opentofu&logoColor=black&labelColor=0a0e1a" alt="OpenTofu" /></a>
+<a href="#"><img src="https://img.shields.io/badge/CloudFormation-FF4F8B?style=flat-square&labelColor=0a0e1a" alt="CloudFormation" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Spacelift-2dd4bf?style=flat-square&labelColor=0a0e1a" alt="Spacelift" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Terragrunt-844FBA?style=flat-square&labelColor=0a0e1a" alt="Terragrunt" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Ansible-EE0000?style=flat-square&logo=ansible&logoColor=white&labelColor=0a0e1a" alt="Ansible" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Packer-02A8EF?style=flat-square&logo=packer&logoColor=white&labelColor=0a0e1a" alt="Packer" /></a>
 
 </details>
 
@@ -195,11 +195,11 @@ Multi-tenant EKS cost governance.
 <summary><b>🚀 CI/CD & Automation</b></summary>
 <br />
 
-![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white&labelColor=0a0e1a)
-![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white&labelColor=0a0e1a)
-![CodePipeline](https://img.shields.io/badge/CodePipeline-FF9900?style=flat-square&labelColor=0a0e1a)
-![Step Functions](https://img.shields.io/badge/Step%20Functions-a78bfa?style=flat-square&labelColor=0a0e1a)
-![EventBridge](https://img.shields.io/badge/EventBridge-22d3ee?style=flat-square&labelColor=0a0e1a)
+<a href="#"><img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white&labelColor=0a0e1a" alt="GitHub Actions" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white&labelColor=0a0e1a" alt="Jenkins" /></a>
+<a href="#"><img src="https://img.shields.io/badge/CodePipeline-FF9900?style=flat-square&labelColor=0a0e1a" alt="CodePipeline" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Step%20Functions-a78bfa?style=flat-square&labelColor=0a0e1a" alt="Step Functions" /></a>
+<a href="#"><img src="https://img.shields.io/badge/EventBridge-22d3ee?style=flat-square&labelColor=0a0e1a" alt="EventBridge" /></a>
 
 </details>
 
@@ -207,13 +207,13 @@ Multi-tenant EKS cost governance.
 <summary><b>💰 FinOps & Cost Engineering</b></summary>
 <br />
 
-![FOCUS 1.2](https://img.shields.io/badge/FOCUS%201.2-a78bfa?style=flat-square&labelColor=0a0e1a)
-![CUR 2.0](https://img.shields.io/badge/CUR%202.0-FF9900?style=flat-square&labelColor=0a0e1a)
-![Athena](https://img.shields.io/badge/Athena-22d3ee?style=flat-square&labelColor=0a0e1a)
-![QuickSight](https://img.shields.io/badge/QuickSight-2dd4bf?style=flat-square&labelColor=0a0e1a)
-![Cost Explorer](https://img.shields.io/badge/Cost%20Explorer-FF9900?style=flat-square&labelColor=0a0e1a)
-![Savings Plans](https://img.shields.io/badge/Savings%20Plans-a78bfa?style=flat-square&labelColor=0a0e1a)
-![Graviton](https://img.shields.io/badge/Graviton-FF9900?style=flat-square&labelColor=0a0e1a)
+<a href="#"><img src="https://img.shields.io/badge/FOCUS%201.2-a78bfa?style=flat-square&labelColor=0a0e1a" alt="FOCUS 1.2" /></a>
+<a href="#"><img src="https://img.shields.io/badge/CUR%202.0-FF9900?style=flat-square&labelColor=0a0e1a" alt="CUR 2.0" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Athena-22d3ee?style=flat-square&labelColor=0a0e1a" alt="Athena" /></a>
+<a href="#"><img src="https://img.shields.io/badge/QuickSight-2dd4bf?style=flat-square&labelColor=0a0e1a" alt="QuickSight" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Cost%20Explorer-FF9900?style=flat-square&labelColor=0a0e1a" alt="Cost Explorer" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Savings%20Plans-a78bfa?style=flat-square&labelColor=0a0e1a" alt="Savings Plans" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Graviton-FF9900?style=flat-square&labelColor=0a0e1a" alt="Graviton" /></a>
 
 </details>
 
@@ -221,14 +221,14 @@ Multi-tenant EKS cost governance.
 <summary><b>🛡️ Security & Governance</b></summary>
 <br />
 
-![IAM](https://img.shields.io/badge/IAM-DD344C?style=flat-square&logo=amazonaws&logoColor=white&labelColor=0a0e1a)
-![SCPs](https://img.shields.io/badge/SCPs-a78bfa?style=flat-square&labelColor=0a0e1a)
-![OIDC](https://img.shields.io/badge/OIDC-2dd4bf?style=flat-square&labelColor=0a0e1a)
-![GuardDuty](https://img.shields.io/badge/GuardDuty-DD344C?style=flat-square&labelColor=0a0e1a)
-![Security Hub](https://img.shields.io/badge/Security%20Hub-2dd4bf?style=flat-square&labelColor=0a0e1a)
-![AWS Config](https://img.shields.io/badge/AWS%20Config-22d3ee?style=flat-square&labelColor=0a0e1a)
-![KMS](https://img.shields.io/badge/KMS-a78bfa?style=flat-square&labelColor=0a0e1a)
-![WAF](https://img.shields.io/badge/WAF-FF9900?style=flat-square&labelColor=0a0e1a)
+<a href="#"><img src="https://img.shields.io/badge/IAM-DD344C?style=flat-square&logo=amazonaws&logoColor=white&labelColor=0a0e1a" alt="IAM" /></a>
+<a href="#"><img src="https://img.shields.io/badge/SCPs-a78bfa?style=flat-square&labelColor=0a0e1a" alt="SCPs" /></a>
+<a href="#"><img src="https://img.shields.io/badge/OIDC-2dd4bf?style=flat-square&labelColor=0a0e1a" alt="OIDC" /></a>
+<a href="#"><img src="https://img.shields.io/badge/GuardDuty-DD344C?style=flat-square&labelColor=0a0e1a" alt="GuardDuty" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Security%20Hub-2dd4bf?style=flat-square&labelColor=0a0e1a" alt="Security Hub" /></a>
+<a href="#"><img src="https://img.shields.io/badge/AWS%20Config-22d3ee?style=flat-square&labelColor=0a0e1a" alt="AWS Config" /></a>
+<a href="#"><img src="https://img.shields.io/badge/KMS-a78bfa?style=flat-square&labelColor=0a0e1a" alt="KMS" /></a>
+<a href="#"><img src="https://img.shields.io/badge/WAF-FF9900?style=flat-square&labelColor=0a0e1a" alt="WAF" /></a>
 
 </details>
 
@@ -236,11 +236,11 @@ Multi-tenant EKS cost governance.
 <summary><b>📊 Observability</b></summary>
 <br />
 
-![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white&labelColor=0a0e1a)
-![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white&labelColor=0a0e1a)
-![CloudWatch](https://img.shields.io/badge/CloudWatch-FF4F8B?style=flat-square&logo=amazoncloudwatch&logoColor=white&labelColor=0a0e1a)
-![Datadog](https://img.shields.io/badge/Datadog-632CA6?style=flat-square&logo=datadog&logoColor=white&labelColor=0a0e1a)
-![ELK](https://img.shields.io/badge/ELK%20Stack-005571?style=flat-square&logo=elastic&logoColor=white&labelColor=0a0e1a)
+<a href="#"><img src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white&labelColor=0a0e1a" alt="Grafana" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white&labelColor=0a0e1a" alt="Prometheus" /></a>
+<a href="#"><img src="https://img.shields.io/badge/CloudWatch-FF4F8B?style=flat-square&logo=amazoncloudwatch&logoColor=white&labelColor=0a0e1a" alt="CloudWatch" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Datadog-632CA6?style=flat-square&logo=datadog&logoColor=white&labelColor=0a0e1a" alt="Datadog" /></a>
+<a href="#"><img src="https://img.shields.io/badge/ELK%20Stack-005571?style=flat-square&logo=elastic&logoColor=white&labelColor=0a0e1a" alt="ELK" /></a>
 
 </details>
 
@@ -248,15 +248,15 @@ Multi-tenant EKS cost governance.
 <summary><b>💻 Languages & Data</b></summary>
 <br />
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white&labelColor=0a0e1a)
-![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white&labelColor=0a0e1a)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white&labelColor=0a0e1a)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white&labelColor=0a0e1a)
-![HCL](https://img.shields.io/badge/HCL-844FBA?style=flat-square&labelColor=0a0e1a)
-![DynamoDB](https://img.shields.io/badge/DynamoDB-4053D6?style=flat-square&logo=amazondynamodb&logoColor=white&labelColor=0a0e1a)
-![S3](https://img.shields.io/badge/S3-569A31?style=flat-square&logo=amazons3&logoColor=white&labelColor=0a0e1a)
-![Lambda](https://img.shields.io/badge/Lambda-FF9900?style=flat-square&logo=awslambda&logoColor=white&labelColor=0a0e1a)
-![Bedrock](https://img.shields.io/badge/Bedrock-232F3E?style=flat-square&logo=amazonaws&logoColor=white&labelColor=0a0e1a)
+<a href="#"><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white&labelColor=0a0e1a" alt="Python" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white&labelColor=0a0e1a" alt="Go" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white&labelColor=0a0e1a" alt="Bash" /></a>
+<a href="#"><img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white&labelColor=0a0e1a" alt="SQL" /></a>
+<a href="#"><img src="https://img.shields.io/badge/HCL-844FBA?style=flat-square&labelColor=0a0e1a" alt="HCL" /></a>
+<a href="#"><img src="https://img.shields.io/badge/DynamoDB-4053D6?style=flat-square&logo=amazondynamodb&logoColor=white&labelColor=0a0e1a" alt="DynamoDB" /></a>
+<a href="#"><img src="https://img.shields.io/badge/S3-569A31?style=flat-square&logo=amazons3&logoColor=white&labelColor=0a0e1a" alt="S3" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Lambda-FF9900?style=flat-square&logo=awslambda&logoColor=white&labelColor=0a0e1a" alt="Lambda" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Bedrock-232F3E?style=flat-square&logo=amazonaws&logoColor=white&labelColor=0a0e1a" alt="Bedrock" /></a>
 
 </details>
 
