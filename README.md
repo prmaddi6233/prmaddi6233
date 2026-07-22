@@ -14,7 +14,7 @@
 
 <br />
 
-**Cloud Platform Engineer · FinOps** &nbsp;·&nbsp; Calgary, Canada 🇨🇦 &nbsp;·&nbsp; 150+ account AWS Organization
+**Cloud Platform Engineer · FinOps** &nbsp;·&nbsp; Calgary, Canada 🇨🇦 &nbsp;·&nbsp;
 
 <br />
 
