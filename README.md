@@ -37,7 +37,7 @@ Principles I build by:
 - **150+ AWS accounts** governed through Control Tower + AFT — policy-gated vending with cost attribution baked in from account zero.
 - **Kubernetes at scale** — multi-tenant EKS with Karpenter, Kyverno guardrails, and per-namespace budgets so no tenant outspends its envelope.
 - **Evidence-based FinOps** — surfaced **$500K+/yr** in defensible savings (RI/SP coverage, Graviton, gp2→gp3, storage lifecycle), each with a proof step before it ships.
-- **Org-wide security posture** — centralized GuardDuty across ~115 member accounts on a drift-free, Terraform-managed export pipeline.
+- **Org-wide security posture** — own the preventive→detective→audit stack: SCPs and IAM/OIDC guardrails, centralized GuardDuty + Security Hub + AWS Config across ~115 accounts, KMS/encryption and WAF baselines — all Terraform-managed and drift-free.
 - **Fail-closed automation** — SARIF findings, OIDC-scoped access, and production canaries instead of sandbox benchmarks that lie.
 
 <img src="assets/h-projects.svg" width="100%" alt="03 · SELECTED WORK" />
@@ -96,7 +96,7 @@ Kyverno guardrails + budgeted namespaces for multi-tenant EKS.
 | **IaC** | Terraform · OpenTofu · Terragrunt · CloudFormation · Spacelift · Ansible |
 | **CI/CD** | GitHub Actions · CodePipeline · Step Functions · EventBridge |
 | **FinOps** | FOCUS 1.2 · CUR 2.0 · Athena · QuickSight · Cost Explorer · Savings Plans · Graviton |
-| **Security** | GuardDuty · Security Hub · AWS Config · SCPs · OIDC · SARIF |
+| **Security** | SCPs · IAM · OIDC · GuardDuty · Security Hub · AWS Config · KMS · WAF · SARIF |
 | **Observability** | Grafana · Prometheus · CloudWatch · Datadog |
 | **Languages** | Python · Bash · Go · SQL · HCL |
 

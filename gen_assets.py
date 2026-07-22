@@ -91,7 +91,7 @@ def hero() -> str:
         (90,  "PLATFORM @ SCALE", "150+ AWS accounts",     CYAN),
         (150, "GOVERNANCE",       "Control Tower · AFT",   VIOLET),
         (210, "IaC / AUTOMATION", "Terraform · Spacelift", TEAL),
-        (330, "SECURITY POSTURE", "org-wide GuardDuty",    CYAN),
+        (330, "SECURITY POSTURE", "detect · enforce · audit", CYAN),
         (270, "COST GOVERNANCE",  "FinOps · FOCUS 1.2",    VIOLET),
         (30,  "K8s PLATFORM",     "multi-tenant EKS",      TEAL),
     ]
