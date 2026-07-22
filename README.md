@@ -8,7 +8,7 @@
 
 [![Portfolio](https://img.shields.io/badge/PORTFOLIO-prmaddi6233.github.io-0b1120?style=for-the-badge&logo=githubpages&logoColor=38bdf8)](https://prmaddi6233.github.io)
 [![LinkedIn](https://img.shields.io/badge/LINKEDIN-in%2Fpradeep--maddi-0b1120?style=for-the-badge&logo=linkedin&logoColor=38bdf8)](https://www.linkedin.com/in/pradeep-maddi)
-[![Email](https://img.shields.io/badge/EMAIL-say%20hello-0b1120?style=for-the-badge&logo=gmail&logoColor=38bdf8)](mailto:pradeep.maddi@outlook.com)
+[![Email](https://img.shields.io/badge/EMAIL-say%20hello-0b1120?style=for-the-badge&logo=gmail&logoColor=38bdf8)](mailto:maddipradeep201@gmail.com)
 [![Location](https://img.shields.io/badge/CALGARY%2C%20CANADA-0b1120?style=for-the-badge&logo=googlemaps&logoColor=2dd4bf)](#)
 
 </div>
@@ -115,7 +115,7 @@ Kyverno policy-as-code guardrails + budgeted namespaces (ResourceQuota / LimitRa
 Whether it's platform engineering, FinOps, or an interesting problem in cloud cost governance — my inbox is open.
 
 [![LinkedIn](https://img.shields.io/badge/Let's%20Connect-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pradeep-maddi)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:pradeep.maddi@outlook.com)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:maddipradeep201@gmail.com)
 
 <img src="assets/footer.svg" width="100%" alt=""/>
 
