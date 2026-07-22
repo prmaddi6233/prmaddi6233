@@ -100,11 +100,12 @@ def footer() -> str:
 assets = {
     "hero.svg": hero(),
     "h-about.svg": section("01", "WHOAMI", "about"),
-    "h-experience.svg": section("02", "CAREER LOG", "2017 → present"),
+    "h-impact.svg": section("02", "SCOPE & IMPACT", "what I run"),
     "h-projects.svg": section("03", "SELECTED WORK", "open source"),
     "h-stack.svg": section("04", "TECH STACK", "tools of the trade"),
     "h-certs.svg": section("05", "CREDENTIALS", "verified"),
-    "h-contact.svg": section("06", "ESTABLISH UPLINK", "get in touch"),
+    "h-writing.svg": section("06", "FIELD NOTES", "writing"),
+    "h-contact.svg": section("07", "ESTABLISH UPLINK", "get in touch"),
     "footer.svg": footer(),
 }
 

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="66" viewBox="0 0 900 66" role="img" aria-label="02 CAREER LOG">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="66" viewBox="0 0 900 66" role="img" aria-label="02 SCOPE &amp; IMPACT">
   <defs>
   <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
     <stop offset="0" stop-color="#38bdf8"/>
@@ -13,6 +13,6 @@
   <rect x="0.5" y="0.5" width="899" height="65" rx="11.5" fill="none" stroke="#24304d"/>
   <rect x="0" y="0" width="5" height="66" rx="2" fill="url(#gv)"/>
   <text x="28" y="41" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="700" fill="url(#g)">02</text>
-  <text x="74" y="41" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="21" font-weight="700" fill="#f1f5f9">CAREER LOG</text>
-  <text x="872" y="40" text-anchor="end" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="12.5" fill="#8595b3">2017 → present</text>
+  <text x="74" y="41" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="21" font-weight="700" fill="#f1f5f9">SCOPE &amp; IMPACT</text>
+  <text x="872" y="40" text-anchor="end" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace" font-size="12.5" fill="#8595b3">what I run</text>
 </svg>
